@@ -11,17 +11,24 @@
     "lint": "eslint . --ext .js"
   },
   "dependencies": {
+    "@expo-google-fonts/lato": "^0.2.2",
+    "@expo-google-fonts/oswald": "^0.2.2",
+    "@expo/metro-config": "^0.3.12",
     "expo": "~44.0.0",
+    "expo-font": "~10.0.4",
     "expo-status-bar": "~1.2.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
+    "react-native-paper": "^4.11.2",
+    "react-native-svg": "12.1.1",
     "react-native-web": "0.17.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@react-native-community/eslint-config": "^3.0.1",
-    "eslint": "^8.11.0",
+    "eslint": "^7.16.0",
+    "eslint-plugin-flowtype": "^8.0.3",
     "prettier": "^2.6.0"
   },
   "private": true

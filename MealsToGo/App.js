@@ -1,37 +1,33 @@
-import {StatusBar as ExpoStatusBar} from 'expo-status-bar';
-import { StatusBar, StyleSheet, Text, View, SafeAreaView, Platform } from 'react-native';
+import React from "react";
+import { StatusBar as ExpoStatusBar } from "expo-status-bar";
+import { RestaurantScreen } from "./src/features/restaurants/screens/restaurant.screen";
+import { StatusBar, StyleSheet } from "react-native";
+
+import {useFonts as  UseOswald, Oswald_400Regular} from '@expo-google-fonts/oswald'
+import {useFonts as UseLato, Lato_400Regular} from '@expo-google-fonts/lato'
+import { useFonts } from "expo-font";
 
 
 export default function App() {
+
+  const [OswaldLoaded] = UseOswald({
+    Oswald_400Regular,
+  });
+
+  const [LatoLoaded] = UseLato({
+    Lato_400Regular,
+  });
+
   return (
     <>
-    <StatusBar style='auto'/>
-    <SafeAreaView style={styles.container}>
-
-      <View style={styles.topcontainer}>
-        <Text>search</Text>
-       </View>
-
-       <View style={styles.bottomcontainer}>
-        <Text>list</Text>
-       </View>
-
-    </SafeAreaView>
+      <StatusBar style="auto" />
+      <RestaurantScreen />
     </>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1, 
-  },
-  topcontainer: {
-    flex: 0.1,
-    backgroundColor: 'green',
-    
-  },
-  bottomcontainer: { 
-    flex: 0.9,
-    backgroundColor: 'blue',
+    flex: 1,
   },
 });
