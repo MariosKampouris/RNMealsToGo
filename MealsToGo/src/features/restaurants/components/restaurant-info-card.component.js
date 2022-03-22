@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, StyleSheet, View } from "react-native";
+import { Text, StyleSheet, View, Image } from "react-native";
 import { Card } from "react-native-paper";
 import { theme } from "../../../infrastructure/theme/index";
 
@@ -11,12 +11,12 @@ import { backgroundColor } from "react-native/Libraries/Components/View/ReactNat
 export const RestaurantInfoCard = ({restaurant = {}}) => {
 const {
 name = 'Test Restaurant',
-icon,
+icon = 'https://www.pinclipart.com/picdir/middle/199-1990075_dining-dinner-plate-restaurant-icon-restaurant-png-clipart.png',
 photos =['https://www.efsyn.gr/sites/default/files/styles/default/public/2019-03/fagito-fast-food.jpg?itok=Jdh9ilvo'] ,
 address = "100 Test Street",
 isOpenNow = true,
 rating = 4.2,
-isClosedTemporarily,
+isClosedTemporarily = true,
 } = restaurant;
 
 const ratingArray = Array.from(new Array(Math.floor(rating)));
@@ -35,7 +35,11 @@ console.log(ratingArray);
                  ))}
                   </View>
                  <View style={styles.openclosedwrapper}>
+                   {isClosedTemporarily && (
+                     <Text style= {styles.addressstyle}>CLOSED TEMPORARILY</Text>
+                   )}
                    {isOpenNow && <SvgXml style={styles.openiconstyle} xml={openclosed}/>}
+                   <Image style={styles.restypeImage} source={{uri: icon}}/>
                  </View>
               </View>
               <Text style={styles.addressstyle}>{address}</Text>
@@ -89,6 +93,11 @@ const styles = StyleSheet.create({
       sectioncontainer:{
           alignItems: 'center',
           flexDirection: 'row',
+      },
+      restypeImage: {
+        marginLeft: 16,
+        height: 20,
+        width: 20,
       }
   });
   
