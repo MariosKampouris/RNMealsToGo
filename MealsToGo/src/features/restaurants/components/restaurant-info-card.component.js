@@ -24,7 +24,7 @@ console.log(ratingArray);
 
     return(
       <>
-        <Card elevation={5} style = {styles.cardstyle}>
+        <Card elevation={8} style = {styles.cardstyle}>
             <Card.Cover style={styles.ImageStyle} source={{uri: photos[0]}} />
              <View style={styles.titlewrapper}>
               <Text style={styles.titlestyle}>{name}</Text>
@@ -33,14 +33,14 @@ console.log(ratingArray);
                  {ratingArray.map(() => (
                     <SvgXml style={styles.stariconstyle} xml={star}/>
                  ))}
-                  </View>
-                 <View style={styles.openclosedwrapper}>
-                   {isClosedTemporarily && (
-                     <Text style= {styles.addressstyle}>CLOSED TEMPORARILY</Text>
-                   )}
-                   {isOpenNow && <SvgXml style={styles.openiconstyle} xml={openclosed}/>}
-                   <Image style={styles.restypeImage} source={{uri: icon}}/>
-                 </View>
+                </View>
+                <View style={styles.openclosedwrapper}>
+                  {isClosedTemporarily && (
+                    <Text style= {styles.closedtext}>CLOSED TEMPORARILY</Text>
+                  )}
+                  {isOpenNow && <SvgXml style={styles.openiconstyle} xml={openclosed}/>}
+                 <Image style={styles.restypeImage} source={{uri: icon}}/>
+                </View>
               </View>
               <Text style={styles.addressstyle}>{address}</Text>
             </View>
@@ -54,6 +54,7 @@ console.log(ratingArray);
 const styles = StyleSheet.create({
     cardstyle: {
         backgroundColor: theme.colors.bg.primary,
+        marginBottom: 24
       },
     ImageStyle: {
       padding: 20,
@@ -61,7 +62,7 @@ const styles = StyleSheet.create({
     },
     titlestyle: {
         fontFamily: theme.fonts.heading,
-        fontSize: 20,
+        fontSize: 16,
         color: theme.colors.ui.primary,
       },
       titlewrapper:{
@@ -69,7 +70,7 @@ const styles = StyleSheet.create({
       },
       addressstyle: {
         fontFamily: theme.fonts.body,
-        fontSize: 16,
+        fontSize: 12,
         color: theme.colors.ui.primary,
       },
       stariconstyle: {
@@ -84,6 +85,7 @@ const styles = StyleSheet.create({
       openiconstyle: {
         width:25,
         height:25,
+        marginLeft: 12,
       },
       openclosedwrapper: {
         flex: 1,
@@ -94,8 +96,13 @@ const styles = StyleSheet.create({
           alignItems: 'center',
           flexDirection: 'row',
       },
+      closedtext:{
+        color: 'red',
+        fontSize: 12,
+        fontFamily: theme.fonts.body,
+    },
       restypeImage: {
-        marginLeft: 16,
+        marginLeft: 12,
         height: 20,
         width: 20,
       }

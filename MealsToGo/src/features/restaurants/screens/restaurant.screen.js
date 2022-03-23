@@ -3,12 +3,10 @@ import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import { Searchbar } from "react-native-paper";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
 import {
-    StatusBar,
     StyleSheet,
-    Text,
     View,
     SafeAreaView,
-    Platform,
+    FlatList,
   } from "react-native";
 import { theme } from "../../../infrastructure/theme";
 
@@ -26,11 +24,12 @@ export const RestaurantScreen = () => {
         value={searchQuery}
       />
     </View>
-
-    <View style={styles.list}>
-      <RestaurantInfoCard/>
-    </View>
-
+    <FlatList 
+      data={[{name: 1}, {name : 2}, {name: 3}, {name : 4}, {name: 5}, {name : 6}, {name: 7}, {name : 8}]}
+      renderItem={() => <RestaurantInfoCard/>}
+      keyExtractor={(item) => item.name}
+      contentContainerStyle={{padding: 16}}
+    />
   </SafeAreaView>
   )
   };
@@ -41,10 +40,6 @@ const styles = StyleSheet.create({
       flex: 1,
     },
     search: {
-      padding: 16,
-    },
-    list: {
-      flex: 1,
       padding: 16,
     },
   });
