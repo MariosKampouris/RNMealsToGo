@@ -6,9 +6,16 @@ import { theme } from "../../../infrastructure/theme/index";
 import { SvgXml } from "react-native-svg";
 import star from '../../../../assets/star';
 import openclosed from "../../../../assets/openclosed";
-import { backgroundColor } from "react-native/Libraries/Components/View/ReactNativeStyleAttributes";
+
+import { useFonts } from 'expo-font';
 
 export const RestaurantInfoCard = ({restaurant = {}}) => {
+
+  let [fontsLoaded] = useFonts({
+    'Oswald_400Regular': require('../../../../assets/fonts/Oswald_400Regular.ttf'),
+    'Lato_400Regular': require('../../../../assets/fonts/Lato_400Regular.ttf')
+    });
+
 const {
 name = 'Test Restaurant',
 icon = 'https://www.pinclipart.com/picdir/middle/199-1990075_dining-dinner-plate-restaurant-icon-restaurant-png-clipart.png',
@@ -20,14 +27,17 @@ isClosedTemporarily = true,
 } = restaurant;
 
 const ratingArray = Array.from(new Array(Math.floor(rating)));
-console.log(ratingArray);
+
+if (!fontsLoaded) {
+  return <View/>;
+}
 
     return(
       <>
         <Card elevation={8} style = {styles.cardstyle}>
             <Card.Cover style={styles.ImageStyle} source={{uri: photos[0]}} />
              <View style={styles.titlewrapper}>
-              <Text style={styles.titlestyle}>{name}</Text>
+              <Text style={[styles.titlestyle, {fontFamily: 'Lato_400Regular'}]}>{name}</Text>
               <View style={styles.sectioncontainer}>
                 <View style={styles.stariconwrapper}>
                  {ratingArray.map(() => (
@@ -36,13 +46,13 @@ console.log(ratingArray);
                 </View>
                 <View style={styles.openclosedwrapper}>
                   {isClosedTemporarily && (
-                    <Text style= {styles.closedtext}>CLOSED TEMPORARILY</Text>
+                    <Text style= {[styles.closedtext, {fontFamily:'Oswald_400Regular'}]}>CLOSED TEMPORARILY</Text>
                   )}
                   {isOpenNow && <SvgXml style={styles.openiconstyle} xml={openclosed}/>}
                  <Image style={styles.restypeImage} source={{uri: icon}}/>
                 </View>
               </View>
-              <Text style={styles.addressstyle}>{address}</Text>
+              <Text style={[styles.addressstyle, {fontFamily: 'Oswald_400Regular'} ]}>{address}</Text>
             </View>
         </Card>
       </>
@@ -61,7 +71,6 @@ const styles = StyleSheet.create({
       backgroundColor: theme.colors.bg.primary,
     },
     titlestyle: {
-        fontFamily: theme.fonts.heading,
         fontSize: 16,
         color: theme.colors.ui.primary,
       },
@@ -69,7 +78,7 @@ const styles = StyleSheet.create({
         padding: 16
       },
       addressstyle: {
-        fontFamily: theme.fonts.body,
+       
         fontSize: 12,
         color: theme.colors.ui.primary,
       },
@@ -99,7 +108,6 @@ const styles = StyleSheet.create({
       closedtext:{
         color: 'red',
         fontSize: 12,
-        fontFamily: theme.fonts.body,
     },
       restypeImage: {
         marginLeft: 12,

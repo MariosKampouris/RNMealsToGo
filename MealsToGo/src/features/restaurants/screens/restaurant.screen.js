@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import { Searchbar } from "react-native-paper";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
@@ -8,12 +8,15 @@ import {
     SafeAreaView,
     FlatList,
   } from "react-native";
-import { theme } from "../../../infrastructure/theme";
+
+import { RestaurantsContext } from "../../../services/restaurants/restaurants.context";
 
 export const RestaurantScreen = () => {
-  const [searchQuery, setSearchQuery] = React.useState("");
 
+  const [searchQuery, setSearchQuery] = React.useState("");
   const onChangeSearch = (query) => setSearchQuery(query);
+
+  const {isLoading, error, restaurants} = useContext(RestaurantsContext);
 
   return(
   <SafeAreaView style={styles.container}>
@@ -25,8 +28,12 @@ export const RestaurantScreen = () => {
       />
     </View>
     <FlatList 
-      data={[{name: 1}, {name : 2}, {name: 3}, {name : 4}, {name: 5}, {name : 6}, {name: 7}, {name : 8}]}
-      renderItem={() => <RestaurantInfoCard/>}
+      data={restaurants}
+      renderItem={({item}) =>{
+      console.log(item);
+      return(
+       <RestaurantInfoCard restaurant={item}/>
+       )}}
       keyExtractor={(item) => item.name}
       contentContainerStyle={{padding: 16}}
     />

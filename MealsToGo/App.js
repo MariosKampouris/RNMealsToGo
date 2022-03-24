@@ -7,9 +7,7 @@ import {Ionicons} from '@expo/vector-icons';
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import {useFonts as  UseOswald, Oswald_400Regular} from '@expo-google-fonts/oswald'
-import {useFonts as UseLato, Lato_400Regular} from '@expo-google-fonts/lato'
-import { useFonts } from "expo-font";
+import {RestaurantsContextProvider} from './src/services/restaurants/restaurants.context'
 
 function Restaurants() {
   return (
@@ -38,18 +36,10 @@ function Restaurants() {
   const Tab = createBottomTabNavigator();
 
   export default function App() {
-
-    const [OswaldLoaded] = UseOswald({
-      Oswald_400Regular,
-    });
-    
-    const [LatoLoaded] = UseLato({
-      Lato_400Regular,
-    });
-    
     return (
-      <>
+      <> 
       <StatusBar style="auto" />
+      <RestaurantsContextProvider>
       <NavigationContainer>
         <Tab.Navigator
         screenOptions={({ route }) => ({
@@ -80,6 +70,7 @@ function Restaurants() {
           <Tab.Screen name="Settings" component={Settings} />
         </Tab.Navigator>
       </NavigationContainer>
+      </RestaurantsContextProvider>
       </>
     );
   }
