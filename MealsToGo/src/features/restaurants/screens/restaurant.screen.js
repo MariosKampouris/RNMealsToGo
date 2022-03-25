@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
-import { Searchbar } from "react-native-paper";
+import { Searchbar, ActivityIndicator } from "react-native-paper";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
 import {
     StyleSheet,
@@ -10,23 +10,20 @@ import {
   } from "react-native";
 
 import { RestaurantsContext } from "../../../services/restaurants/restaurants.context";
+import { Search } from "../components/search.component";
 
 export const RestaurantScreen = () => {
-
-  const [searchQuery, setSearchQuery] = React.useState("");
-  const onChangeSearch = (query) => setSearchQuery(query);
 
   const {isLoading, error, restaurants} = useContext(RestaurantsContext);
 
   return(
   <SafeAreaView style={styles.container}>
-    <View style={styles.search}>
-      <Searchbar
-        placeholder="Search"
-        onChangeText={onChangeSearch}
-        value={searchQuery}
-      />
-    </View>
+    {isLoading && (
+      <View style={styles.loadingContainer}>
+        <ActivityIndicator size={50} animating={true} color='tomato' style={{marginLeft: -25}} />
+      </View>
+    )}
+    <Search/>
     <FlatList 
       data={restaurants}
       renderItem={({item}) =>{
@@ -49,4 +46,9 @@ const styles = StyleSheet.create({
     search: {
       padding: 16,
     },
+    loadingContainer: {
+      position: 'absolute',
+      top: '50%',
+      left: '50%'
+    }
   });
