@@ -10,69 +10,16 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import {RestaurantsContextProvider} from './src/services/restaurants/restaurants.context';
 import {LocationContextProvider} from './src/services/location/location.context';
 
-function Restaurants() {
-  return (
-    <>
-      <RestaurantScreen />
-    </>
-  );
-}
-
-  function Map() {
-    return (
-      <SafeAreaView>
-        <Text>Map Screen</Text>
-      </SafeAreaView>
-    );
-  }
-
-  function Settings() {
-    return (
-      <SafeAreaView>
-        <Text>Settings Screen</Text>
-      </SafeAreaView>
-    );
-  }
-
-  const Tab = createBottomTabNavigator();
+import {Navigation} from './src/infrastructure/navigation/index'
 
   export default function App() {
     return (
       <> 
       <StatusBar style="auto" />
       <LocationContextProvider>
-      <RestaurantsContextProvider>
-      <NavigationContainer>
-        <Tab.Navigator
-        screenOptions={({ route }) => ({
-          tabBarIcon: ({ focused, color, size }) => {
-            let iconName;
-
-            if (route.name === 'Restaurants') {
-              iconName = focused
-                ? 'restaurant'
-                : 'restaurant-outline';
-            } else if (route.name === 'Map') {
-              iconName = focused 
-              ? 'ios-map' 
-              : 'ios-map-outline';
-            } else if (route.name === 'Settings') {
-              iconName = focused 
-              ? 'ios-settings-sharp' 
-              : 'ios-settings-outline';
-            }  
-            return <Ionicons name={iconName} size={size} color={color} />;
-          },
-          tabBarActiveTintColor: 'tomato',
-          tabBarInactiveTintColor: 'gray',
-        })}
-        >
-          <Tab.Screen name="Restaurants" component={Restaurants} />
-          <Tab.Screen name="Map" component={Map} />
-          <Tab.Screen name="Settings" component={Settings} />
-        </Tab.Navigator>
-      </NavigationContainer>
-      </RestaurantsContextProvider>
+        <RestaurantsContextProvider>
+          <Navigation/>
+        </RestaurantsContextProvider>
       </LocationContextProvider>
       </>
     );

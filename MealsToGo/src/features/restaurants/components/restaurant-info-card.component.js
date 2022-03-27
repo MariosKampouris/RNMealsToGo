@@ -24,6 +24,7 @@ address = "100 Test Street",
 isOpenNow = true,
 rating = 4.2,
 isClosedTemporarily = true,
+placeId
 } = restaurant;
 
 const ratingArray = Array.from(new Array(Math.floor(rating)));
@@ -40,8 +41,8 @@ if (!fontsLoaded) {
               <Text style={[styles.titlestyle, {fontFamily: 'Lato_400Regular'}]}>{name}</Text>
               <View style={styles.sectioncontainer}>
                 <View style={styles.stariconwrapper}>
-                 {ratingArray.map(() => (
-                    <SvgXml style={styles.stariconstyle} xml={star}/>
+                 {ratingArray.map((_, i) => (
+                    <SvgXml key ={`star-${placeId}-${i}`} style={styles.stariconstyle} xml={star}/>
                  ))}
                 </View>
                 <View style={styles.openclosedwrapper}>
