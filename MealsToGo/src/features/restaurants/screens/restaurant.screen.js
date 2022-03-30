@@ -7,12 +7,13 @@ import {
     View,
     SafeAreaView,
     FlatList,
+    TouchableOpacity
   } from "react-native";
 
 import { RestaurantsContext } from "../../../services/restaurants/restaurants.context";
 import { Search } from "../components/search.component";
 
-export const RestaurantScreen = () => {
+export const RestaurantScreen = ({navigation}) => {
 
   const {isLoading, error, restaurants} = useContext(RestaurantsContext);
 
@@ -29,7 +30,9 @@ export const RestaurantScreen = () => {
       renderItem={({item}) =>{
       console.log(item);
       return(
-       <RestaurantInfoCard restaurant={item}/>
+        <TouchableOpacity onPress={() => navigation.navigate("RestaurantDetail", {restaurant: item})}>
+            <RestaurantInfoCard restaurant={item}/>
+        </TouchableOpacity>
        )}}
       keyExtractor={(item) => item.name}
       contentContainerStyle={{padding: 16}}

@@ -3,6 +3,7 @@ import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import { RestaurantScreen } from "./src/features/restaurants/screens/restaurant.screen";
 import { StatusBar, StyleSheet, Text, View, SafeAreaView } from "react-native";
 import {Ionicons} from '@expo/vector-icons';
+import 'react-native-gesture-handler';
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
