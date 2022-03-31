@@ -1,5 +1,5 @@
 import React, {useState, useContext, useEffect} from 'react';
-import { LocationContext } from '../../../services/location/location.context';
+import { LocationContext } from '../../../../services/location/location.context';
 import { Searchbar } from 'react-native-paper';
 import {
     StyleSheet,
@@ -11,13 +11,14 @@ export const Search = () => {
     const [searchKeyword, setSearchKeyword] = useState(keyword);
 
     useEffect(() => {
-      setSearchKeyword(keyword);
-  }, [keyword]);
+        setSearchKeyword(keyword);
+    }, [keyword]);
 
     return (
     <View style={styles.search}>
       <Searchbar
         placeholder="Search for a location"
+        icon="map"
         value={searchKeyword}
         onSubmitEditing={() => {
             search(searchKeyword);
@@ -33,5 +34,8 @@ export const Search = () => {
 const styles = StyleSheet.create({
     search: {
       padding: 16,
+      position : 'absolute',
+      width: "100%",
+      zIndex: 1,
     },
   });
