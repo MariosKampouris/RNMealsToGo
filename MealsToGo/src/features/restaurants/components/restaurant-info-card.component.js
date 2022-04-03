@@ -9,6 +9,8 @@ import openclosed from "../../../../assets/openclosed";
 
 import { useFonts } from 'expo-font';
 
+import { Favourite } from "../../../components/favourites/favourite.component";
+
 export const RestaurantInfoCard = ({restaurant = {}}) => {
 
   let [fontsLoaded] = useFonts({
@@ -36,6 +38,7 @@ if (!fontsLoaded) {
     return(
       <>
         <Card elevation={8} style = {styles.cardstyle}>
+            <Favourite restaurant={restaurant}/>
             <Card.Cover style={styles.ImageStyle} source={{uri: photos[0]}} />
              <View style={styles.titlewrapper}>
               <Text style={[styles.titlestyle, {fontFamily: 'Lato_400Regular'}]}>{name}</Text>

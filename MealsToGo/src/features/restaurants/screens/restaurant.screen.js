@@ -11,6 +11,7 @@ import {
   } from "react-native";
 
 import { RestaurantsContext } from "../../../services/restaurants/restaurants.context";
+
 import { Search } from "../components/search.component";
 
 export const RestaurantScreen = ({navigation}) => {
@@ -28,7 +29,6 @@ export const RestaurantScreen = ({navigation}) => {
     <FlatList 
       data={restaurants}
       renderItem={({item}) =>{
-      console.log(item);
       return(
         <TouchableOpacity onPress={() => navigation.navigate("RestaurantDetail", {restaurant: item})}>
             <RestaurantInfoCard restaurant={item}/>

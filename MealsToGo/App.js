@@ -11,17 +11,21 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import {RestaurantsContextProvider} from './src/services/restaurants/restaurants.context';
 import {LocationContextProvider} from './src/services/location/location.context';
 
+import { FavouritesContextProvider } from "./src/services/favourites/favourites.context";
+
 import {Navigation} from './src/infrastructure/navigation/index'
 
   export default function App() {
     return (
       <> 
       <StatusBar style="auto" />
-      <LocationContextProvider>
-        <RestaurantsContextProvider>
-          <Navigation/>
-        </RestaurantsContextProvider>
-      </LocationContextProvider>
+      <FavouritesContextProvider>
+        <LocationContextProvider>
+         <RestaurantsContextProvider>
+            <Navigation/>
+          </RestaurantsContextProvider>
+       </LocationContextProvider>
+      </FavouritesContextProvider>
       </>
     );
   }
