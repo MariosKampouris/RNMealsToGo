@@ -31,8 +31,9 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+//initializeApp(config);
 const auth = getAuth(app);
-
+//const auth = getAuth();
 
   export default function App() {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -40,12 +41,13 @@ const auth = getAuth(app);
   useEffect(() => {
     signInWithEmailAndPassword(auth, '<marioswow20@gmail.com>', '<marios123>')
     .then((user) => {
-      console.log(user);
       setIsAuthenticated(true);
     }).catch((e) =>{
       console.log(e);
     });
   }, []);
+
+  if (isAuthenticated) return null;
 
     return (
       <> 
