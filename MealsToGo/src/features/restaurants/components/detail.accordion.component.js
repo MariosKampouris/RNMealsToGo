@@ -1,5 +1,4 @@
 import React from 'react';
-import { ScrollView } from 'react-native';
 import { List } from 'react-native-paper';
 
 export const AccordionDetail = () => {
@@ -15,7 +14,6 @@ export const AccordionDetail = () => {
 
     return(
         <>
-        <ScrollView>
         <List.Accordion
           title="Breakfast"
           left={props => <List.Icon {...props} icon="cupcake" />}
@@ -52,7 +50,6 @@ export const AccordionDetail = () => {
           <List.Item title="Sprite" />
           <List.Item title="Orange Juice" />
         </List.Accordion>
-        </ScrollView>
       </>
     );
 };

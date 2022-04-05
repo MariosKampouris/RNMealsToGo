@@ -5,8 +5,8 @@ import WebView from 'react-native-webview';
 
 
 const isAndroid = Platform.OS ==='android';
-export const CompactRestaurantInfo = ({restaurant}) => {
-    const CustomImage = isAndroid ? (WebView) : Image 
+export const CompactRestaurantInfo = ({restaurant, isMap}) => {
+    const CustomImage = isAndroid && isMap ? (WebView) : Image 
     return(
     <View style={styles.container}>
         <CustomImage style={styles.imagestyle} source={{uri: restaurant.photos[0] }}/>
@@ -26,11 +26,11 @@ const styles = StyleSheet.create({
     titlestyle : {
         paddingTop: 6,
         fontSize: 15,
-        fontWeight: 'bold'
+        fontFamily:'Oswald_400Regular',
     },
     imagestyle : {
         height : 120,
         width : 140,
-        borderRadius: 10,
+        borderRadius: 15,
     }
 });

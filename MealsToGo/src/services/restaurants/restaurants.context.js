@@ -29,7 +29,6 @@ export const RestaurantsContextProvider = ({children}) => {
     }
 useEffect(() => {
     if (location) {
-    console.log(location);
     const locationString = `${location.lat},${location.lng}`;
     retrieveRestaurants(locationString);
 }

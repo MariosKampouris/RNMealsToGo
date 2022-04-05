@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import { Searchbar, ActivityIndicator } from "react-native-paper";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
@@ -11,12 +11,16 @@ import {
   } from "react-native";
 
 import { RestaurantsContext } from "../../../services/restaurants/restaurants.context";
+import { FavouritesContext } from "../../../services/favourites/favourites.context";
 
 import { Search } from "../components/search.component";
+import { FavouritesBar } from "../../../components/favourites/favourites-bar.component";
 
 export const RestaurantScreen = ({navigation}) => {
 
   const {isLoading, error, restaurants} = useContext(RestaurantsContext);
+  const {favourites} = useContext(FavouritesContext);
+  const [isToggled, setIsToggled] = useState(false);
 
   return(
   <SafeAreaView style={styles.container}>
@@ -25,7 +29,8 @@ export const RestaurantScreen = ({navigation}) => {
         <ActivityIndicator size={50} animating={true} color='tomato' style={{marginLeft: -25}} />
       </View>
     )}
-    <Search/>
+    <Search isFavouritesToggled={isToggled} onFavouritesToggle={() => setIsToggled(!isToggled)}/>
+    {isToggled && <FavouritesBar favourites={favourites} onNavigate={navigation.navigate}/>}
     <FlatList 
       data={restaurants}
       renderItem={({item}) =>{
