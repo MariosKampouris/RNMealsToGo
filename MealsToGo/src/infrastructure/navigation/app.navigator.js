@@ -7,17 +7,9 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import {RestaurantsNavigator} from './restaurants.navigator';
 import { MapScreen } from "../../features/map/screens/map.screen";
+import { SettingsScreen } from "../../features/settings/settings.screen";
 
 const Tab = createBottomTabNavigator();
-  
-    function Settings() {
-      return (
-        <SafeAreaView>
-          <Text>Settings Screen</Text>
-        </SafeAreaView>
-      );
-    }
-  
 
 export const AppNavigator = () => (
     <NavigationContainer>
@@ -49,7 +41,7 @@ export const AppNavigator = () => (
         >
           <Tab.Screen name="Restaurants" component={RestaurantsNavigator} />
           <Tab.Screen name="Map" component={MapScreen} />
-          <Tab.Screen name="Settings" component={Settings} />
+          <Tab.Screen name="Settings" component={SettingsScreen} />
         </Tab.Navigator>
       </NavigationContainer>
 );
