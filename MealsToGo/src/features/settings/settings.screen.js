@@ -1,7 +1,8 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState, createContext} from 'react';
 import {TextInput, Button, TouchableOpacity, SafeAreaView, View, Alert} from 'react-native';
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut} from "firebase/auth";
 import { authentication } from '../../../firebase/firebase-config';
+
 
 export const SettingsScreen = () => {
     //const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -18,10 +19,13 @@ export const SettingsScreen = () => {
   
    // console.log(authentication);
   //  if (!isAuthenticated) return null;
+
+  
   const [isRegistered, setIsRegistered] = useState(false);
   const [isSignedIn, setIsSignedIn] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
 
   const [emailSignIn, setEmailSignIn] = useState('');
   const [passwordSignIn, setPasswordSignIn] = useState('');
@@ -30,11 +34,22 @@ export const SettingsScreen = () => {
     createUserWithEmailAndPassword(authentication, email, password).then((re) =>{
         console.log(re);
         setIsRegistered(true);
+        automaticSignIn();
     }).catch((re) =>{
         console.log(re);
         emailAlertCall();
     });
   };
+
+  const automaticSignIn = () =>{
+    signInWithEmailAndPassword(authentication, email, password).then((re) =>{
+        console.log(re);
+        setIsSignedIn(true);
+    }).catch((re) =>{
+        console.log(re);
+    });
+  };
+
 
   const SignInUser = () =>{
     signInWithEmailAndPassword(authentication, emailSignIn, passwordSignIn).then((re) =>{

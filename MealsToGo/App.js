@@ -18,17 +18,21 @@ import { FavouritesContextProvider } from "./src/services/favourites/favourites.
 
 import {Navigation} from './src/infrastructure/navigation/index'
 
+import { AuthenticationContextProvider } from "./src/services/authentication/authentication.context";
+
   export default function App() {
     return (
       <> 
       <StatusBar style="auto" />
-      <FavouritesContextProvider>
-        <LocationContextProvider>
-         <RestaurantsContextProvider>
-            <Navigation/>
-          </RestaurantsContextProvider>
-       </LocationContextProvider>
-      </FavouritesContextProvider>
+      <AuthenticationContextProvider>
+        <FavouritesContextProvider>
+          <LocationContextProvider>
+           <RestaurantsContextProvider>
+             <Navigation/>
+           </RestaurantsContextProvider>
+         </LocationContextProvider>
+        </FavouritesContextProvider>
+      </AuthenticationContextProvider>
       </>
     );
   }

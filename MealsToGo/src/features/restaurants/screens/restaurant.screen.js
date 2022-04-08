@@ -1,7 +1,9 @@
 import React, {useContext, useState} from "react";
+import { Text } from "react-native";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import { Searchbar, ActivityIndicator } from "react-native-paper";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
+import { isSignedIn } from "../../settings/settings.screen";
 import {
     StyleSheet,
     View,
