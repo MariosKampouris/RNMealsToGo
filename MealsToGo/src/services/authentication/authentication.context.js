@@ -26,6 +26,7 @@ const onLogin = (email, password) => {
     return(
         <AuthenticationContext.Provider
             value={{
+                isAuthenticated: !!user,
                 user,
                 isLoading,
                 error,
