@@ -23,6 +23,21 @@ const onLogin = (email, password) => {
     })
 };
 
+const onRegister = (email, password, repeatedPassword) => {
+    if (password !== repeatedPassword){
+        setError("Error: Passwords do not match!");
+        return;
+    }
+    createUserWithEmailAndPassword(authentication, email, password)
+    .then((u) => {
+        setUser(u);
+        setIsLoading(false);
+    }).catch((e) =>{
+        setIsLoading(false);
+        setError(e);
+    });
+};
+
     return(
         <AuthenticationContext.Provider
             value={{
@@ -31,6 +46,7 @@ const onLogin = (email, password) => {
                 isLoading,
                 error,
                 onLogin,
+                onRegister,
             }}
         >
             {children}

@@ -3,19 +3,15 @@ import { ImageBackground, StyleSheet, View, SafeAreaView, Text } from "react-nat
 import { Button, TextInput  } from 'react-native-paper';
 import { Navigation } from '../../../infrastructure/navigation';
 import { AuthenticationContext } from '../../../services/authentication/authentication.context';
-
+import { ActivityIndicator, Colors } from 'react-native-paper';
 
 
 export const LoginScreen = ({navigation}) => {
 
-    let [fontsLoaded] = useFonts({
-        'Oswald_400Regular': require('../../../../assets/fonts/Oswald_400Regular.ttf'),
-        'Lato_400Regular': require('../../../../assets/fonts/Lato_400Regular.ttf')
-        });
 
 const[email, setEmail] = useState("");
 const[password, setPassword] = useState("");
-const {onLogin} = useContext(AuthenticationContext);
+const {onLogin, isLoading} = useContext(AuthenticationContext);
 
     return (
         <SafeAreaView style={styles.maincontainer}>
@@ -47,9 +43,11 @@ const {onLogin} = useContext(AuthenticationContext);
                             value={password}
                             onChangeText={password => setPassword(password)}
                         />
-                        <Button onPress={() => onLogin(email, password)} icon='lock-open-outline' color='#2182BD' mode='contained' style={styles.buttonstyling}>
+                        {!isLoading ? (<Button onPress={() => onLogin(email, password)} icon='lock-open-outline' color='#2182BD' mode='contained' style={styles.buttonstyling}>
                             LOGIN
-                        </Button>
+                        </Button>) : (
+                            <ActivityIndicator animating={true} color={'blue'}/>
+                        )}
                     </View>
                     <Button onPress={() => navigation.goBack()} icon='arrow-left-bold' color='#2182BD' mode='contained' style={styles.backbuttonstyling}>
                             BACK
