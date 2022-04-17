@@ -1,6 +1,7 @@
 import React from 'react';
 import { ImageBackground, StyleSheet, Text, View, SafeAreaView} from "react-native";
 import { Button } from 'react-native-paper';
+import LottieView from 'lottie-react-native';
 
 export const AccountScreen = ({navigation}) => {
 
@@ -12,6 +13,15 @@ export const AccountScreen = ({navigation}) => {
             style={styles.image}
             >
                 <View style={styles.coverview}>
+                    <View style={styles.animationwrapper}>
+                    <LottieView
+                        key='animation'
+                        autoPlay
+                        loop
+                        resizeMode='cover'
+                        source={require('../../../../assets/watermelon.json')}
+                    />
+                    </View>
                     <Text style={[styles.maintitle, {fontFamily:'Oswald_400Regular'}]}>Meals To Go</Text>
                     <View style={styles.accountcontainer}>
                         <Button onPress={() => navigation.navigate("Login")} icon='lock-open-outline' color='#2182BD' mode='contained' style={styles.buttonstyling}>
@@ -31,6 +41,7 @@ export const AccountScreen = ({navigation}) => {
 const styles = StyleSheet.create ({
     maincontainer : {
         flex : 1,
+        backgroundColor: '#ffffff'
     },
     image :{
         flex: 1,
@@ -57,5 +68,12 @@ const styles = StyleSheet.create ({
     },
     maintitle: {
         fontSize: 40,
+    },
+    animationwrapper:{
+        width: 420,
+        height: 420,
+        position: 'absolute',
+        top: -40,
+        padding: 9
     }
 });

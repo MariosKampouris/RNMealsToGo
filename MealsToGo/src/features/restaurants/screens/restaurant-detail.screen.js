@@ -9,7 +9,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export const RestaurantDetailScreen = ({route}) => {
     const {restaurant} = route.params;
     return(
-        <SafeAreaView>
+        <SafeAreaView style={{backgroundColor: '#FFFFFF'}}>
             <ScrollView>
                  <RestaurantInfoCard restaurant={restaurant}/>
                  <AccordionDetail/>
