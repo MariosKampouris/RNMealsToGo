@@ -1,9 +1,8 @@
 import React, {useState, useContext} from 'react';
 import { ImageBackground, StyleSheet, View, SafeAreaView, Text } from "react-native";
 import { Button, TextInput  } from 'react-native-paper';
-import { Navigation } from '../../../infrastructure/navigation';
 import { AuthenticationContext } from '../../../services/authentication/authentication.context';
-import { ActivityIndicator, Colors } from 'react-native-paper';
+import { ActivityIndicator} from 'react-native-paper';
 
 
 export const LoginScreen = ({navigation}) => {

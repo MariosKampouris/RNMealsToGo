@@ -1,9 +1,6 @@
 import React, {useContext, useState} from "react";
-import { Text } from "react-native";
-import { StatusBar as ExpoStatusBar } from "expo-status-bar";
-import { Searchbar, ActivityIndicator } from "react-native-paper";
+import { ActivityIndicator } from "react-native-paper";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
-import { isSignedIn } from "../../settings/settings.screen";
 import {
     StyleSheet,
     View,
@@ -17,6 +14,8 @@ import { FavouritesContext } from "../../../services/favourites/favourites.conte
 
 import { Search } from "../components/search.component";
 import { FavouritesBar } from "../../../components/favourites/favourites-bar.component";
+
+import { FadeInView } from "../../../components/animations/fade.animation";
 
 export const RestaurantScreen = ({navigation}) => {
 
@@ -33,17 +32,21 @@ export const RestaurantScreen = ({navigation}) => {
     )}
     <Search isFavouritesToggled={isToggled} onFavouritesToggle={() => setIsToggled(!isToggled)}/>
     {isToggled && <FavouritesBar favourites={favourites} onNavigate={navigation.navigate}/>}
+    
     <FlatList 
       data={restaurants}
       renderItem={({item}) =>{
       return(
+        <FadeInView>
         <TouchableOpacity onPress={() => navigation.navigate("RestaurantDetail", {restaurant: item})}>
             <RestaurantInfoCard restaurant={item}/>
         </TouchableOpacity>
+        </FadeInView>
        )}}
       keyExtractor={(item) => item.name}
       contentContainerStyle={{padding: 16}}
     />
+  
   </SafeAreaView>
   )
   };

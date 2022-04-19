@@ -1,18 +1,21 @@
-import React, {useContext, createContext} from 'react';
-import {Button, TouchableOpacity, SafeAreaView, View, StyleSheet} from 'react-native';
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut} from "firebase/auth";
-import { authentication } from '../../../firebase/firebase-config';
+import React, {useContext} from 'react';
+import {SafeAreaView, View, StyleSheet, Text} from 'react-native';
 import { AuthenticationContext } from '../../services/authentication/authentication.context';
 import {List, Avatar} from 'react-native-paper';
 
 export const SettingsScreen = ({navigation}) => {
 
-const {onLogout} = useContext(AuthenticationContext);
+const {onLogout, user} = useContext(AuthenticationContext);
 
     return(
         <>
             <SafeAreaView style={{backgroundColor: '#FFFFFF'}}>
-                <Avatar.Icon size={180} icon='human' backgroundColor='#2182BD'/>
+                <View style={styles.avatarcontainer}>
+                    <Avatar.Icon size={180} icon='human' backgroundColor='#2182BD'/>
+                </View>
+                <View style={styles.avatarcontainer}>
+                    <Text variant='caption'>{user.email}</Text>
+                </View>
                 <List.Section>
                     <List.Item
                         style={styles.listitem}
@@ -39,6 +42,9 @@ const styles = StyleSheet.create ({
         padding : 16
     },
     avatarcontainer: {
-
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingTop: 14,
+        paddingBottom: 14
     }
 })

@@ -1,6 +1,5 @@
 import React, {useState, createContext} from 'react';
-import { initializeApp } from "firebase/app";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged} from "firebase/auth";
+import {createUserWithEmailAndPassword,signOut, onAuthStateChanged} from "firebase/auth";
 import { authentication } from '../../../firebase/firebase-config';
 import { loginRequest } from './authentication.service';
 

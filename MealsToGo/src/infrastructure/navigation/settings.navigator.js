@@ -1,5 +1,6 @@
 import React from 'react';
 import { SettingsScreen } from '../../features/settings/settings.screen';
+import {FavouritesScreen} from '../../features/settings/favourites.screen';
 
 import{
     createStackNavigator,
@@ -14,6 +15,7 @@ export const SettingsNavigator = ({route, navigation}) => {
             headerMode = "screen"
             screenOptions={{
                 cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+                gestureEnabled : true
             }}
         >
             <SettingsStack.Screen
@@ -25,10 +27,10 @@ export const SettingsNavigator = ({route, navigation}) => {
             />
             <SettingsStack.Screen
                 options={{
-                    header: () => null
+                    
                 }}
                 name = 'Favourites'
-                component={() => null}
+                component={FavouritesScreen}
             />
         </SettingsStack.Navigator>
     );
