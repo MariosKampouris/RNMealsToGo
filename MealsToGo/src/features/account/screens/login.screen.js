@@ -10,7 +10,18 @@ export const LoginScreen = ({navigation}) => {
 
 const[email, setEmail] = useState("");
 const[password, setPassword] = useState("");
-const {onLogin, isLoading} = useContext(AuthenticationContext);
+const[customError, setCustomError] = useState(null);
+const {onLogin, isLoading, error} = useContext(AuthenticationContext);
+
+/*if(!{email}){
+    setCustomError('bring me donuts');
+}else if(!{password}){
+    setCustomError('bring me cake');
+}else{
+    setCustomError('bring me chicken');
+}*/
+
+
 
     return (
         <SafeAreaView style={styles.maincontainer}>
@@ -42,6 +53,11 @@ const {onLogin, isLoading} = useContext(AuthenticationContext);
                             value={password}
                             onChangeText={password => setPassword(password)}
                         />
+                        {error && (
+                            <View style={styles.errortextcontainer}>
+                                <Text variant="error" style={styles.errortextstyling}>{error}</Text>
+                            </View>
+                        )}
                         {!isLoading ? (<Button onPress={() => onLogin(email, password)} icon='lock-open-outline' color='#2182BD' mode='contained' style={styles.buttonstyling}>
                             LOGIN
                         </Button>) : (
@@ -100,5 +116,13 @@ const styles = StyleSheet.create ({
     },
     maintitle: {
         fontSize: 40,
+    },
+    errortextstyling : {
+        color : 'red',
+        fontSize: 16
+    },
+    errortextcontainer : {
+        paddingTop : 16,
+        paddingBottom : 16
     }
 });

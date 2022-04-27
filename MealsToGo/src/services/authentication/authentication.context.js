@@ -26,7 +26,21 @@ const onLogin = (email, password) => {
         setIsLoading(false);
     }).catch((e) =>{
         setIsLoading(false);
-        setError(e);
+        if(!email){
+            setError("Error : Please provide an email.");
+        }
+        else if(email && !email.includes("@")){
+            setError("Error : Please provide a valid email.");
+        }
+        else if(!password){
+            setError("Error : Please provide a password.");
+        }
+        else if(password && password.length <= 6){
+            setError("Error : Password must be atleast 6 characters.");
+        }
+        else{
+            setError("Error : Invalid Credentials.");
+        }
     })
 };
 

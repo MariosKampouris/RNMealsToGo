@@ -1,0 +1,1120 @@
+[debug] [2022-04-27T13:45:48.459Z] ----------------------------------------------------------------------
+[debug] [2022-04-27T13:45:48.461Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2022-04-27T13:45:48.462Z] CLI Version:   10.7.1
+[debug] [2022-04-27T13:45:48.462Z] Platform:      win32
+[debug] [2022-04-27T13:45:48.462Z] Node Version:  v16.14.0
+[debug] [2022-04-27T13:45:48.463Z] Time:          Wed Apr 27 2022 09:45:48 GMT-0400 (Eastern Daylight Time)
+[debug] [2022-04-27T13:45:48.463Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-27T13:45:48.581Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-27T13:45:48.581Z] > authorizing via signed-in user (marioswow20@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-04-27T13:45:48.620Z] [hub] writing locator at C:\Users\Marios\AppData\Local\Temp\hub-mealstogo-b3cc7.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-04-27T13:45:48.641Z] defaultcredentials: writing to file C:\Users\Marios\AppData\Roaming\firebase\marioswow20_gmail_com_application_default_credentials.json
+[debug] [2022-04-27T13:45:48.643Z] Setting GAC to C:\Users\Marios\AppData\Roaming\firebase\marioswow20_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Marios\\AppData\\Roaming\\firebase\\marioswow20_gmail_com_application_default_credentials.json"}}
+[debug] [2022-04-27T13:45:48.646Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-b3cc7/adminSdkConfig [none]
+[debug] [2022-04-27T13:45:49.108Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-b3cc7/adminSdkConfig 200
+[debug] [2022-04-27T13:45:49.108Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-b3cc7/adminSdkConfig {"projectId":"mealstogo-b3cc7","storageBucket":"mealstogo-b3cc7.appspot.com"}
+[debug] [2022-04-27T13:45:49.395Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-04-27T13:45:49.396Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-04-27T13:45:49.396Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Marios\\.cache\\firebase\\emulators\\ui-v1.6.5\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Marios\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.6.5\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-04-27T13:45:49.585Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\" for Cloud Functions..."}}
+[debug] [2022-04-27T13:45:49.668Z] Validating nodejs source
+[debug] [2022-04-27T13:45:52.908Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-27T13:45:52.908Z] Building nodejs source
+[debug] [2022-04-27T13:45:52.908Z] Analyzing nodejs backend spec
+[info] +  functions[us-central1-geocode]: http function initialized (http://localhost:5001/mealstogo-b3cc7/us-central1/geocode). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/mealstogo-b3cc7/us-central1/geocode)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-04-27T13:46:17.593Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-27T13:46:17.594Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-27T13:46:17.594Z] Accepted request GET /mealstogo-b3cc7/us-central1/geocode --> us-central1-geocode
+[debug] [2022-04-27T13:46:17.602Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-04-27T13:46:17.603Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-04-27T13:46:17.603Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-04-27T13:46:17.604Z] [worker-us-central1-geocode-f83efcff-68db-4b01-8f72-789953863f8c]: Assigning socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\17276 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-f83efcff-68db-4b01-8f72-789953863f8c]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\17276"}}
+[debug] [2022-04-27T13:46:17.604Z] [worker-us-central1-geocode-f83efcff-68db-4b01-8f72-789953863f8c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-f83efcff-68db-4b01-8f72-789953863f8c]: BUSY"}}
+[debug] [2022-04-27T13:46:19.391Z] [runtime-status] [17276] Functions runtime initialized. {"cwd":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [17276] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2022-04-27T13:46:19.393Z] [runtime-status] [17276] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [17276] Disabled runtime features: undefined"}}
+[debug] [2022-04-27T13:46:19.396Z] [runtime-status] [17276] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [17276] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T13:46:19.398Z] [runtime-status] [17276] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [17276] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T13:46:19.398Z] [runtime-status] [17276] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [17276] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-04-27T13:46:19.399Z] [runtime-status] [17276] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [17276] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T13:46:19.501Z] [runtime-status] [17276] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [17276] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-04-27T13:46:19.501Z] [runtime-status] [17276] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [17276] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-27T13:46:19.503Z] [runtime-status] [17276] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [17276] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T13:46:19.505Z] [runtime-status] [17276] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [17276] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T13:46:19.505Z] [runtime-status] [17276] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [17276] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T13:46:19.506Z] [runtime-status] [17276] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [17276] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-27T13:46:19.508Z] [runtime-status] [17276] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [17276] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-04-27T13:46:19.509Z] [runtime-status] [17276] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [17276] Running geocode in signature http"}}
+[debug] [2022-04-27T13:46:19.514Z] [runtime-status] [17276] Attempting to listen to socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\17276 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [17276] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\17276"}}
+[debug] [2022-04-27T13:46:19.519Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-27T13:46:19.520Z] [functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode, mapping to path=/"}}
+[debug] [2022-04-27T13:46:19.536Z] [runtime-status] [17276] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [17276] Ephemeral server handling GET request"}}
+[debug] [2022-04-27T13:46:19.542Z] [runtime-status] [17276] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [17276] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-04-27T13:46:19.617Z] [worker-us-central1-geocode-f83efcff-68db-4b01-8f72-789953863f8c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-f83efcff-68db-4b01-8f72-789953863f8c]: IDLE"}}
+[debug] [2022-04-27T13:46:19.618Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-27T14:34:15.792Z] File C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\geocode.mock.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\geocode.mock.js changed, reloading triggers"}}
+[debug] [2022-04-27T14:34:16.799Z] [worker-pool] Shutting down IDLE worker (us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-geocode)"}}
+[debug] [2022-04-27T14:34:16.799Z] [worker-us-central1-geocode-f83efcff-68db-4b01-8f72-789953863f8c]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-f83efcff-68db-4b01-8f72-789953863f8c]: FINISHING"}}
+[debug] [2022-04-27T14:34:16.801Z] Validating nodejs source
+[debug] [2022-04-27T14:34:20.813Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-27T14:34:20.814Z] Building nodejs source
+[debug] [2022-04-27T14:34:20.814Z] Analyzing nodejs backend spec
+[debug] [2022-04-27T14:34:20.818Z] [worker-us-central1-geocode-f83efcff-68db-4b01-8f72-789953863f8c]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-f83efcff-68db-4b01-8f72-789953863f8c]: exited"}}
+[debug] [2022-04-27T14:34:20.818Z] [worker-us-central1-geocode-f83efcff-68db-4b01-8f72-789953863f8c]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-f83efcff-68db-4b01-8f72-789953863f8c]: FINISHED"}}
+[debug] [2022-04-27T14:34:37.294Z] File C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\geocode.mock.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\geocode.mock.js changed, reloading triggers"}}
+[debug] [2022-04-27T14:34:38.309Z] Validating nodejs source
+[debug] [2022-04-27T14:34:42.009Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-27T14:34:42.009Z] Building nodejs source
+[debug] [2022-04-27T14:34:42.009Z] Analyzing nodejs backend spec
+[debug] [2022-04-27T14:35:56.402Z] File C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\index.js changed, reloading triggers"}}
+[debug] [2022-04-27T14:35:57.411Z] Validating nodejs source
+[debug] [2022-04-27T14:36:01.256Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-27T14:36:01.256Z] Building nodejs source
+[debug] [2022-04-27T14:36:01.256Z] Analyzing nodejs backend spec
+[debug] [2022-04-27T14:36:15.580Z] File C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\index.js changed, reloading triggers"}}
+[debug] [2022-04-27T14:36:16.590Z] Validating nodejs source
+[debug] [2022-04-27T14:36:20.447Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-27T14:36:20.447Z] Building nodejs source
+[debug] [2022-04-27T14:36:20.447Z] Analyzing nodejs backend spec
+[debug] [2022-04-27T14:37:15.775Z] File C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\index.js changed, reloading triggers"}}
+[debug] [2022-04-27T14:37:16.791Z] Validating nodejs source
+[debug] [2022-04-27T14:37:20.626Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-27T14:37:20.626Z] Building nodejs source
+[debug] [2022-04-27T14:37:20.626Z] Analyzing nodejs backend spec
+[debug] [2022-04-27T14:38:37.873Z] File C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\index.js changed, reloading triggers"}}
+[debug] [2022-04-27T14:38:38.889Z] Validating nodejs source
+[debug] [2022-04-27T14:38:42.479Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-27T14:38:42.479Z] Building nodejs source
+[debug] [2022-04-27T14:38:42.479Z] Analyzing nodejs backend spec
+[debug] [2022-04-27T14:38:42.484Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-27T14:38:42.484Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-27T14:38:42.484Z] Accepted request GET /mealstogo-b3cc7/us-central1/geocode --> us-central1-geocode
+[debug] [2022-04-27T14:38:42.484Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2022-04-27T14:38:42.490Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-04-27T14:38:42.491Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-04-27T14:38:42.491Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-04-27T14:38:42.491Z] [worker-us-central1-geocode-e210200b-4587-4815-9758-ec4cc4c8510d]: Assigning socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\5444 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-e210200b-4587-4815-9758-ec4cc4c8510d]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\5444"}}
+[debug] [2022-04-27T14:38:42.491Z] [worker-us-central1-geocode-e210200b-4587-4815-9758-ec4cc4c8510d]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-e210200b-4587-4815-9758-ec4cc4c8510d]: BUSY"}}
+[debug] [2022-04-27T14:38:44.634Z] [runtime-status] [5444] Functions runtime initialized. {"cwd":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5444] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2022-04-27T14:38:44.636Z] [runtime-status] [5444] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5444] Disabled runtime features: undefined"}}
+[debug] [2022-04-27T14:38:44.639Z] [runtime-status] [5444] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5444] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:38:44.642Z] [runtime-status] [5444] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5444] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:38:44.642Z] [runtime-status] [5444] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5444] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-04-27T14:38:44.643Z] [runtime-status] [5444] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5444] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:38:44.749Z] [runtime-status] [5444] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5444] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-04-27T14:38:44.749Z] [runtime-status] [5444] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5444] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-27T14:38:44.750Z] [runtime-status] [5444] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5444] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:38:44.752Z] [runtime-status] [5444] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5444] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:38:44.753Z] [runtime-status] [5444] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5444] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:38:44.753Z] [runtime-status] [5444] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5444] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-27T14:38:44.756Z] [runtime-status] [5444] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5444] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-04-27T14:38:44.757Z] [runtime-status] [5444] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5444] Running geocode in signature http"}}
+[debug] [2022-04-27T14:38:44.765Z] [runtime-status] [5444] Attempting to listen to socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\5444 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5444] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\5444"}}
+[debug] [2022-04-27T14:38:44.772Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-27T14:38:44.772Z] [functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode, mapping to path=/"}}
+[debug] [2022-04-27T14:38:44.793Z] [runtime-status] [5444] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5444] Ephemeral server handling GET request"}}
+[debug] [2022-04-27T14:38:44.793Z] [runtime-status] [5444] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5444] Ephemeral server survived."}}
+[warn] !  functions: ReferenceError: locationsMock is not defined
+    at module.exports.geocodeRequest (C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\index.js:6:26)
+    at C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\index.js:7:4
+    at cloudFunction (C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\node_modules\firebase-functions\lib\providers\https.js:50:16)
+    at C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:591:16
+    at runFunction (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:564:15)
+    at runHTTPS (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:590:11)
+    at handler (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:510:23)
+    at Layer.handle [as handle_request] (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\route.js:112:3) {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"ReferenceError: locationsMock is not defined\n    at module.exports.geocodeRequest (C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\index.js:6:26)\n    at C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\index.js:7:4\n    at cloudFunction (C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\providers\\https.js:50:16)\n    at C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:591:16\n    at runFunction (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:564:15)\n    at runHTTPS (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:590:11)\n    at handler (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:510:23)\n    at Layer.handle [as handle_request] (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\route.js:112:3)"}}
+[warn] !  Your function was killed because it raised an unhandled error. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Your function was killed because it raised an unhandled error."}}
+[debug] [2022-04-27T14:38:44.838Z] [worker-us-central1-geocode-e210200b-4587-4815-9758-ec4cc4c8510d]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-e210200b-4587-4815-9758-ec4cc4c8510d]: exited"}}
+[debug] [2022-04-27T14:38:44.838Z] [worker-us-central1-geocode-e210200b-4587-4815-9758-ec4cc4c8510d]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-e210200b-4587-4815-9758-ec4cc4c8510d]: FINISHED"}}
+[debug] [2022-04-27T14:38:44.839Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-27T14:39:08.125Z] File C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\index.js changed, reloading triggers"}}
+[debug] [2022-04-27T14:39:09.141Z] Validating nodejs source
+[debug] [2022-04-27T14:39:12.953Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-27T14:39:12.953Z] Building nodejs source
+[debug] [2022-04-27T14:39:12.953Z] Analyzing nodejs backend spec
+[debug] [2022-04-27T14:39:12.960Z] File C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\index.js changed, reloading triggers"}}
+[debug] [2022-04-27T14:39:13.963Z] Validating nodejs source
+[debug] [2022-04-27T14:39:17.517Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-27T14:39:17.517Z] Building nodejs source
+[debug] [2022-04-27T14:39:17.517Z] Analyzing nodejs backend spec
+[debug] [2022-04-27T14:39:17.521Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-27T14:39:17.522Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-27T14:39:17.522Z] Accepted request GET /mealstogo-b3cc7/us-central1/geocode --> us-central1-geocode
+[debug] [2022-04-27T14:39:17.522Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2022-04-27T14:39:17.527Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-04-27T14:39:17.527Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-04-27T14:39:17.527Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-04-27T14:39:17.527Z] [worker-us-central1-geocode-9345d223-0e6c-42ae-814e-b2c27b82b1eb]: Assigning socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\23092 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-9345d223-0e6c-42ae-814e-b2c27b82b1eb]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\23092"}}
+[debug] [2022-04-27T14:39:17.528Z] [worker-us-central1-geocode-9345d223-0e6c-42ae-814e-b2c27b82b1eb]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-9345d223-0e6c-42ae-814e-b2c27b82b1eb]: BUSY"}}
+[debug] [2022-04-27T14:39:19.325Z] [runtime-status] [23092] Functions runtime initialized. {"cwd":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23092] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2022-04-27T14:39:19.327Z] [runtime-status] [23092] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23092] Disabled runtime features: undefined"}}
+[debug] [2022-04-27T14:39:19.331Z] [runtime-status] [23092] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23092] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:39:19.332Z] [runtime-status] [23092] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23092] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:39:19.333Z] [runtime-status] [23092] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23092] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-04-27T14:39:19.334Z] [runtime-status] [23092] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23092] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:39:19.439Z] [runtime-status] [23092] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23092] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-04-27T14:39:19.439Z] [runtime-status] [23092] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23092] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-27T14:39:19.440Z] [runtime-status] [23092] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23092] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:39:19.442Z] [runtime-status] [23092] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23092] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:39:19.442Z] [runtime-status] [23092] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23092] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:39:19.443Z] [runtime-status] [23092] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23092] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-27T14:39:19.445Z] [runtime-status] [23092] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23092] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-04-27T14:39:19.446Z] [runtime-status] [23092] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23092] Running geocode in signature http"}}
+[debug] [2022-04-27T14:39:19.452Z] [runtime-status] [23092] Attempting to listen to socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\23092 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23092] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\23092"}}
+[debug] [2022-04-27T14:39:19.457Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-27T14:39:19.457Z] [functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode, mapping to path=/"}}
+[debug] [2022-04-27T14:39:19.474Z] [runtime-status] [23092] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23092] Ephemeral server handling GET request"}}
+[debug] [2022-04-27T14:39:19.474Z] [runtime-status] [23092] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23092] Ephemeral server survived."}}
+[warn] !  functions: ReferenceError: Cannot access 'locationMock' before initialization
+    at module.exports.geocodeRequest (C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\index.js:6:26)
+    at C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\index.js:7:4
+    at cloudFunction (C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\node_modules\firebase-functions\lib\providers\https.js:50:16)
+    at C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:591:16
+    at runFunction (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:564:15)
+    at runHTTPS (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:590:11)
+    at handler (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:510:23)
+    at Layer.handle [as handle_request] (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\route.js:112:3) {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"ReferenceError: Cannot access 'locationMock' before initialization\n    at module.exports.geocodeRequest (C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\index.js:6:26)\n    at C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\index.js:7:4\n    at cloudFunction (C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\providers\\https.js:50:16)\n    at C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:591:16\n    at runFunction (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:564:15)\n    at runHTTPS (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:590:11)\n    at handler (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:510:23)\n    at Layer.handle [as handle_request] (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\route.js:112:3)"}}
+[warn] !  Your function was killed because it raised an unhandled error. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Your function was killed because it raised an unhandled error."}}
+[debug] [2022-04-27T14:39:19.552Z] [worker-us-central1-geocode-9345d223-0e6c-42ae-814e-b2c27b82b1eb]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-9345d223-0e6c-42ae-814e-b2c27b82b1eb]: exited"}}
+[debug] [2022-04-27T14:39:19.552Z] [worker-us-central1-geocode-9345d223-0e6c-42ae-814e-b2c27b82b1eb]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-9345d223-0e6c-42ae-814e-b2c27b82b1eb]: FINISHED"}}
+[debug] [2022-04-27T14:39:19.552Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-27T14:39:32.866Z] File C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\index.js changed, reloading triggers"}}
+[debug] [2022-04-27T14:39:33.878Z] Validating nodejs source
+[debug] [2022-04-27T14:39:37.827Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-27T14:39:37.827Z] Building nodejs source
+[debug] [2022-04-27T14:39:37.827Z] Analyzing nodejs backend spec
+[debug] [2022-04-27T14:39:43.375Z] File C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\index.js changed, reloading triggers"}}
+[debug] [2022-04-27T14:39:44.388Z] Validating nodejs source
+[debug] [2022-04-27T14:39:48.240Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-27T14:39:48.240Z] Building nodejs source
+[debug] [2022-04-27T14:39:48.240Z] Analyzing nodejs backend spec
+[debug] [2022-04-27T14:39:57.261Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-27T14:39:57.261Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-27T14:39:57.261Z] Accepted request GET /mealstogo-b3cc7/us-central1/geocode --> us-central1-geocode
+[debug] [2022-04-27T14:39:57.261Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2022-04-27T14:39:57.267Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-04-27T14:39:57.267Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-04-27T14:39:57.267Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-04-27T14:39:57.267Z] [worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: Assigning socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\5256 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\5256"}}
+[debug] [2022-04-27T14:39:57.267Z] [worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: BUSY"}}
+[debug] [2022-04-27T14:39:58.986Z] [runtime-status] [5256] Functions runtime initialized. {"cwd":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2022-04-27T14:39:58.987Z] [runtime-status] [5256] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Disabled runtime features: undefined"}}
+[debug] [2022-04-27T14:39:58.991Z] [runtime-status] [5256] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:39:58.993Z] [runtime-status] [5256] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:39:58.995Z] [runtime-status] [5256] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-04-27T14:39:58.996Z] [runtime-status] [5256] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:39:59.103Z] [runtime-status] [5256] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-04-27T14:39:59.103Z] [runtime-status] [5256] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-27T14:39:59.104Z] [runtime-status] [5256] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:39:59.106Z] [runtime-status] [5256] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:39:59.107Z] [runtime-status] [5256] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:39:59.107Z] [runtime-status] [5256] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-27T14:39:59.110Z] [runtime-status] [5256] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-04-27T14:39:59.111Z] [runtime-status] [5256] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Running geocode in signature http"}}
+[debug] [2022-04-27T14:39:59.116Z] [runtime-status] [5256] Attempting to listen to socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\5256 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\5256"}}
+[debug] [2022-04-27T14:39:59.121Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-27T14:39:59.121Z] [functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode, mapping to path=/"}}
+[debug] [2022-04-27T14:39:59.144Z] [runtime-status] [5256] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Ephemeral server handling GET request"}}
+[debug] [2022-04-27T14:39:59.150Z] [runtime-status] [5256] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-04-27T14:39:59.157Z] [worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: IDLE"}}
+[debug] [2022-04-27T14:39:59.157Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-27T14:40:25.376Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-27T14:40:25.377Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-27T14:40:25.377Z] Accepted request GET /mealstogo-b3cc7/us-central1/geocode?city=Antwerp --> us-central1-geocode
+[debug] [2022-04-27T14:40:25.377Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-04-27T14:40:25.377Z] [worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: Assigning socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\5256 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\5256"}}
+[debug] [2022-04-27T14:40:25.377Z] [worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: BUSY"}}
+[debug] [2022-04-27T14:40:25.378Z] [runtime-status] [5256] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-04-27T14:40:25.380Z] [runtime-status] [5256] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Running geocode in signature http"}}
+[debug] [2022-04-27T14:40:25.380Z] [runtime-status] [5256] Attempting to listen to socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\5256 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\5256"}}
+[debug] [2022-04-27T14:40:25.383Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-27T14:40:25.383Z] [functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Antwerp, mapping to path=/?city=Antwerp {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Antwerp, mapping to path=/?city=Antwerp"}}
+[debug] [2022-04-27T14:40:25.386Z] [runtime-status] [5256] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Ephemeral server handling GET request"}}
+[debug] [2022-04-27T14:40:25.387Z] [runtime-status] [5256] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-04-27T14:40:25.389Z] [worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: IDLE"}}
+[debug] [2022-04-27T14:40:25.389Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-27T14:40:33.976Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-27T14:40:33.977Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-27T14:40:33.977Z] Accepted request GET /mealstogo-b3cc7/us-central1/geocode?city=Toronto --> us-central1-geocode
+[debug] [2022-04-27T14:40:33.977Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-04-27T14:40:33.977Z] [worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: Assigning socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\5256 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\5256"}}
+[debug] [2022-04-27T14:40:33.977Z] [worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: BUSY"}}
+[debug] [2022-04-27T14:40:33.978Z] [runtime-status] [5256] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-04-27T14:40:33.979Z] [runtime-status] [5256] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Running geocode in signature http"}}
+[debug] [2022-04-27T14:40:33.979Z] [runtime-status] [5256] Attempting to listen to socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\5256 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\5256"}}
+[debug] [2022-04-27T14:40:33.981Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-27T14:40:33.981Z] [functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Toronto, mapping to path=/?city=Toronto {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Toronto, mapping to path=/?city=Toronto"}}
+[debug] [2022-04-27T14:40:33.983Z] [runtime-status] [5256] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Ephemeral server handling GET request"}}
+[debug] [2022-04-27T14:40:33.984Z] [runtime-status] [5256] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [5256] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-04-27T14:40:33.985Z] [worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: IDLE"}}
+[debug] [2022-04-27T14:40:33.986Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-27T14:41:30.971Z] File C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\index.js changed, reloading triggers"}}
+[debug] [2022-04-27T14:41:31.980Z] [worker-pool] Shutting down IDLE worker (us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-geocode)"}}
+[debug] [2022-04-27T14:41:31.980Z] [worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: FINISHING"}}
+[debug] [2022-04-27T14:41:31.981Z] Validating nodejs source
+[debug] [2022-04-27T14:41:35.935Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-27T14:41:35.935Z] Building nodejs source
+[debug] [2022-04-27T14:41:35.935Z] Analyzing nodejs backend spec
+[debug] [2022-04-27T14:41:35.939Z] [worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: exited"}}
+[debug] [2022-04-27T14:41:35.939Z] [worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-22ee37b9-8627-4198-a6e2-25f04b003533]: FINISHED"}}
+[debug] [2022-04-27T14:41:42.735Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-27T14:41:42.736Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-27T14:41:42.736Z] Accepted request GET /mealstogo-b3cc7/us-central1/geocode?city=Toronto --> us-central1-geocode
+[debug] [2022-04-27T14:41:42.736Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2022-04-27T14:41:42.742Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-04-27T14:41:42.742Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-04-27T14:41:42.742Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-04-27T14:41:42.742Z] [worker-us-central1-geocode-0ac56c5f-2f1b-4d30-b5ab-193368b6c1f2]: Assigning socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\10536 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-0ac56c5f-2f1b-4d30-b5ab-193368b6c1f2]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\10536"}}
+[debug] [2022-04-27T14:41:42.742Z] [worker-us-central1-geocode-0ac56c5f-2f1b-4d30-b5ab-193368b6c1f2]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-0ac56c5f-2f1b-4d30-b5ab-193368b6c1f2]: BUSY"}}
+[debug] [2022-04-27T14:41:44.437Z] [runtime-status] [10536] Functions runtime initialized. {"cwd":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10536] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2022-04-27T14:41:44.438Z] [runtime-status] [10536] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10536] Disabled runtime features: undefined"}}
+[debug] [2022-04-27T14:41:44.441Z] [runtime-status] [10536] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10536] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:41:44.443Z] [runtime-status] [10536] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10536] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:41:44.444Z] [runtime-status] [10536] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10536] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-04-27T14:41:44.445Z] [runtime-status] [10536] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10536] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:41:44.559Z] [runtime-status] [10536] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10536] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-04-27T14:41:44.559Z] [runtime-status] [10536] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10536] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-27T14:41:44.561Z] [runtime-status] [10536] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10536] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:41:44.563Z] [runtime-status] [10536] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10536] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:41:44.565Z] [runtime-status] [10536] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10536] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T14:41:44.565Z] [runtime-status] [10536] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10536] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-27T14:41:44.569Z] [runtime-status] [10536] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10536] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-04-27T14:41:44.570Z] [runtime-status] [10536] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10536] Running geocode in signature http"}}
+[debug] [2022-04-27T14:41:44.576Z] [runtime-status] [10536] Attempting to listen to socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\10536 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10536] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\10536"}}
+[debug] [2022-04-27T14:41:44.583Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-27T14:41:44.583Z] [functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Toronto, mapping to path=/?city=Toronto {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Toronto, mapping to path=/?city=Toronto"}}
+[debug] [2022-04-27T14:41:44.615Z] [runtime-status] [10536] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10536] Ephemeral server handling GET request"}}
+[debug] [2022-04-27T14:41:44.629Z] [runtime-status] [10536] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10536] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-04-27T14:41:44.636Z] [worker-us-central1-geocode-0ac56c5f-2f1b-4d30-b5ab-193368b6c1f2]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-0ac56c5f-2f1b-4d30-b5ab-193368b6c1f2]: IDLE"}}
+[debug] [2022-04-27T14:41:44.636Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-27T15:24:05.440Z] File C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\index.js changed, reloading triggers"}}
+[debug] [2022-04-27T15:24:06.446Z] [worker-pool] Shutting down IDLE worker (us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-geocode)"}}
+[debug] [2022-04-27T15:24:06.446Z] [worker-us-central1-geocode-0ac56c5f-2f1b-4d30-b5ab-193368b6c1f2]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-0ac56c5f-2f1b-4d30-b5ab-193368b6c1f2]: FINISHING"}}
+[debug] [2022-04-27T15:24:06.448Z] Validating nodejs source
+[debug] [2022-04-27T15:24:10.843Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-27T15:24:10.843Z] Building nodejs source
+[debug] [2022-04-27T15:24:10.843Z] Analyzing nodejs backend spec
+[debug] [2022-04-27T15:24:10.848Z] [worker-us-central1-geocode-0ac56c5f-2f1b-4d30-b5ab-193368b6c1f2]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-0ac56c5f-2f1b-4d30-b5ab-193368b6c1f2]: exited"}}
+[debug] [2022-04-27T15:24:10.848Z] [worker-us-central1-geocode-0ac56c5f-2f1b-4d30-b5ab-193368b6c1f2]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-0ac56c5f-2f1b-4d30-b5ab-193368b6c1f2]: FINISHED"}}
+[debug] [2022-04-27T15:38:35.583Z] File C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\index.js changed, reloading triggers"}}
+[debug] [2022-04-27T15:38:36.599Z] Validating nodejs source
+[debug] [2022-04-27T15:38:40.171Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-27T15:38:40.171Z] Building nodejs source
+[debug] [2022-04-27T15:38:40.171Z] Analyzing nodejs backend spec
+[debug] [2022-04-27T15:38:45.906Z] File C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\index.js changed, reloading triggers"}}
+[debug] [2022-04-27T15:38:46.912Z] Validating nodejs source
+[debug] [2022-04-27T15:38:50.268Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-27T15:38:50.268Z] Building nodejs source
+[debug] [2022-04-27T15:38:50.268Z] Analyzing nodejs backend spec
+[debug] [2022-04-27T15:38:54.139Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-27T15:38:54.139Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-27T15:38:54.139Z] Accepted request GET /mealstogo-b3cc7/us-central1/geocode?city=Toronto --> us-central1-geocode
+[debug] [2022-04-27T15:38:54.139Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2022-04-27T15:38:54.145Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-04-27T15:38:54.145Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-04-27T15:38:54.145Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-04-27T15:38:54.145Z] [worker-us-central1-geocode-855d26af-bbe1-47e6-b48d-9385ecf407b0]: Assigning socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\23388 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-855d26af-bbe1-47e6-b48d-9385ecf407b0]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\23388"}}
+[debug] [2022-04-27T15:38:54.145Z] [worker-us-central1-geocode-855d26af-bbe1-47e6-b48d-9385ecf407b0]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-855d26af-bbe1-47e6-b48d-9385ecf407b0]: BUSY"}}
+[debug] [2022-04-27T15:38:55.928Z] [runtime-status] [23388] Functions runtime initialized. {"cwd":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23388] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2022-04-27T15:38:55.930Z] [runtime-status] [23388] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23388] Disabled runtime features: undefined"}}
+[debug] [2022-04-27T15:38:55.933Z] [runtime-status] [23388] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23388] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:38:55.936Z] [runtime-status] [23388] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23388] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:38:55.937Z] [runtime-status] [23388] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23388] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-04-27T15:38:55.938Z] [runtime-status] [23388] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23388] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:38:56.065Z] [runtime-status] [23388] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23388] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-04-27T15:38:56.066Z] [runtime-status] [23388] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23388] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-27T15:38:56.067Z] [runtime-status] [23388] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23388] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:38:56.070Z] [runtime-status] [23388] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23388] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:38:56.071Z] [runtime-status] [23388] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23388] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:38:56.072Z] [runtime-status] [23388] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23388] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-27T15:38:56.076Z] [runtime-status] [23388] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23388] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-04-27T15:38:56.077Z] [runtime-status] [23388] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23388] Running geocode in signature http"}}
+[debug] [2022-04-27T15:38:56.084Z] [runtime-status] [23388] Attempting to listen to socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\23388 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23388] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\23388"}}
+[debug] [2022-04-27T15:38:56.089Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-27T15:38:56.089Z] [functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Toronto, mapping to path=/?city=Toronto {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Toronto, mapping to path=/?city=Toronto"}}
+[debug] [2022-04-27T15:38:56.114Z] [runtime-status] [23388] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23388] Ephemeral server handling GET request"}}
+[debug] [2022-04-27T15:38:56.115Z] [runtime-status] [23388] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [23388] Ephemeral server survived."}}
+[warn] !  functions: ReferenceError: locationsMock is not defined
+    at module.exports.geocodeRequest (C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\index.js:6:26)
+    at C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\index.js:7:4
+    at cloudFunction (C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\node_modules\firebase-functions\lib\providers\https.js:50:16)
+    at C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:591:16
+    at runFunction (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:564:15)
+    at runHTTPS (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:590:11)
+    at handler (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:510:23)
+    at Layer.handle [as handle_request] (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\route.js:112:3) {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"ReferenceError: locationsMock is not defined\n    at module.exports.geocodeRequest (C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\index.js:6:26)\n    at C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\index.js:7:4\n    at cloudFunction (C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\providers\\https.js:50:16)\n    at C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:591:16\n    at runFunction (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:564:15)\n    at runHTTPS (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:590:11)\n    at handler (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:510:23)\n    at Layer.handle [as handle_request] (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\route.js:112:3)"}}
+[warn] !  Your function was killed because it raised an unhandled error. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Your function was killed because it raised an unhandled error."}}
+[debug] [2022-04-27T15:38:56.174Z] [worker-us-central1-geocode-855d26af-bbe1-47e6-b48d-9385ecf407b0]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-855d26af-bbe1-47e6-b48d-9385ecf407b0]: exited"}}
+[debug] [2022-04-27T15:38:56.174Z] [worker-us-central1-geocode-855d26af-bbe1-47e6-b48d-9385ecf407b0]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-855d26af-bbe1-47e6-b48d-9385ecf407b0]: FINISHED"}}
+[debug] [2022-04-27T15:38:56.174Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-27T15:39:10.817Z] File C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\index.js changed, reloading triggers"}}
+[debug] [2022-04-27T15:39:11.827Z] Validating nodejs source
+[debug] [2022-04-27T15:39:15.319Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-27T15:39:15.319Z] Building nodejs source
+[debug] [2022-04-27T15:39:15.319Z] Analyzing nodejs backend spec
+[debug] [2022-04-27T15:39:15.323Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-27T15:39:15.323Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-27T15:39:15.323Z] Accepted request GET /mealstogo-b3cc7/us-central1/geocode?city=Toronto --> us-central1-geocode
+[debug] [2022-04-27T15:39:15.323Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2022-04-27T15:39:15.328Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-04-27T15:39:15.328Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-04-27T15:39:15.328Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-04-27T15:39:15.329Z] [worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: Assigning socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\22276 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\22276"}}
+[debug] [2022-04-27T15:39:15.329Z] [worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: BUSY"}}
+[debug] [2022-04-27T15:39:16.933Z] [runtime-status] [22276] Functions runtime initialized. {"cwd":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2022-04-27T15:39:16.934Z] [runtime-status] [22276] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Disabled runtime features: undefined"}}
+[debug] [2022-04-27T15:39:16.938Z] [runtime-status] [22276] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:39:16.940Z] [runtime-status] [22276] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:39:16.941Z] [runtime-status] [22276] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-04-27T15:39:16.942Z] [runtime-status] [22276] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:39:17.052Z] [runtime-status] [22276] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-04-27T15:39:17.053Z] [runtime-status] [22276] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-27T15:39:17.054Z] [runtime-status] [22276] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:39:17.055Z] [runtime-status] [22276] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:39:17.056Z] [runtime-status] [22276] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:39:17.056Z] [runtime-status] [22276] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-27T15:39:17.059Z] [runtime-status] [22276] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-04-27T15:39:17.060Z] [runtime-status] [22276] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Running geocode in signature http"}}
+[debug] [2022-04-27T15:39:17.066Z] [runtime-status] [22276] Attempting to listen to socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\22276 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\22276"}}
+[debug] [2022-04-27T15:39:17.069Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-27T15:39:17.069Z] [functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Toronto, mapping to path=/?city=Toronto {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Toronto, mapping to path=/?city=Toronto"}}
+[debug] [2022-04-27T15:39:17.096Z] [runtime-status] [22276] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Ephemeral server handling GET request"}}
+[debug] [2022-04-27T15:39:17.099Z] [runtime-status] [22276] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-04-27T15:39:17.107Z] [worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: IDLE"}}
+[debug] [2022-04-27T15:39:17.107Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-27T15:39:28.984Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-27T15:39:28.984Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-27T15:39:28.984Z] Accepted request GET /mealstogo-b3cc7/us-central1/geocode?city=Toronto --> us-central1-geocode
+[debug] [2022-04-27T15:39:28.984Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-04-27T15:39:28.984Z] [worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: Assigning socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\22276 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\22276"}}
+[debug] [2022-04-27T15:39:28.985Z] [worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: BUSY"}}
+[debug] [2022-04-27T15:39:28.985Z] [runtime-status] [22276] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-04-27T15:39:28.986Z] [runtime-status] [22276] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Running geocode in signature http"}}
+[debug] [2022-04-27T15:39:28.986Z] [runtime-status] [22276] Attempting to listen to socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\22276 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\22276"}}
+[debug] [2022-04-27T15:39:28.988Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-27T15:39:28.988Z] [functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Toronto, mapping to path=/?city=Toronto {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Toronto, mapping to path=/?city=Toronto"}}
+[debug] [2022-04-27T15:39:28.989Z] [runtime-status] [22276] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Ephemeral server handling GET request"}}
+[debug] [2022-04-27T15:39:28.990Z] [runtime-status] [22276] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-04-27T15:39:28.991Z] [worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: IDLE"}}
+[debug] [2022-04-27T15:39:28.991Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-27T15:39:32.602Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-27T15:39:32.602Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-27T15:39:32.602Z] Accepted request GET /mealstogo-b3cc7/us-central1/geocode?city=Toronto --> us-central1-geocode
+[debug] [2022-04-27T15:39:32.602Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-04-27T15:39:32.602Z] [worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: Assigning socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\22276 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\22276"}}
+[debug] [2022-04-27T15:39:32.602Z] [worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: BUSY"}}
+[debug] [2022-04-27T15:39:32.603Z] [runtime-status] [22276] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-04-27T15:39:32.604Z] [runtime-status] [22276] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Running geocode in signature http"}}
+[debug] [2022-04-27T15:39:32.605Z] [runtime-status] [22276] Attempting to listen to socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\22276 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\22276"}}
+[debug] [2022-04-27T15:39:32.606Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-27T15:39:32.606Z] [functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Toronto, mapping to path=/?city=Toronto {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Toronto, mapping to path=/?city=Toronto"}}
+[debug] [2022-04-27T15:39:32.609Z] [runtime-status] [22276] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Ephemeral server handling GET request"}}
+[debug] [2022-04-27T15:39:32.609Z] [runtime-status] [22276] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-04-27T15:39:32.610Z] [worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: IDLE"}}
+[debug] [2022-04-27T15:39:32.611Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-27T15:39:36.743Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-27T15:39:36.743Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-27T15:39:36.744Z] Accepted request GET /mealstogo-b3cc7/us-central1/geocode --> us-central1-geocode
+[debug] [2022-04-27T15:39:36.744Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-04-27T15:39:36.744Z] [worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: Assigning socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\22276 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\22276"}}
+[debug] [2022-04-27T15:39:36.744Z] [worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: BUSY"}}
+[debug] [2022-04-27T15:39:36.744Z] [runtime-status] [22276] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-04-27T15:39:36.745Z] [runtime-status] [22276] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Running geocode in signature http"}}
+[debug] [2022-04-27T15:39:36.745Z] [runtime-status] [22276] Attempting to listen to socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\22276 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\22276"}}
+[debug] [2022-04-27T15:39:36.747Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-27T15:39:36.747Z] [functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode, mapping to path=/"}}
+[debug] [2022-04-27T15:39:36.750Z] [runtime-status] [22276] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Ephemeral server handling GET request"}}
+[debug] [2022-04-27T15:39:36.750Z] [runtime-status] [22276] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [22276] Ephemeral server survived."}}
+[warn] !  functions: TypeError: Cannot read properties of undefined (reading 'toLowerCase')
+    at module.exports.geocodeRequest (C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\index.js:6:45)
+    at C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\index.js:7:4
+    at cloudFunction (C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\node_modules\firebase-functions\lib\providers\https.js:50:16)
+    at C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:591:16
+    at runFunction (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:564:15)
+    at runHTTPS (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:590:11)
+    at handler (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:510:23)
+    at Layer.handle [as handle_request] (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\route.js:112:3) {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"TypeError: Cannot read properties of undefined (reading 'toLowerCase')\n    at module.exports.geocodeRequest (C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\index.js:6:45)\n    at C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\index.js:7:4\n    at cloudFunction (C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\providers\\https.js:50:16)\n    at C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:591:16\n    at runFunction (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:564:15)\n    at runHTTPS (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:590:11)\n    at handler (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:510:23)\n    at Layer.handle [as handle_request] (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Marios\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\route.js:112:3)"}}
+[warn] !  Your function was killed because it raised an unhandled error. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Your function was killed because it raised an unhandled error."}}
+[debug] [2022-04-27T15:39:36.838Z] [worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: exited"}}
+[debug] [2022-04-27T15:39:36.838Z] [worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-cd571080-12b5-4bcd-b7c6-fe111b4df4d6]: FINISHED"}}
+[debug] [2022-04-27T15:39:36.838Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-27T15:39:51.733Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-27T15:39:51.733Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-27T15:39:51.733Z] Accepted request GET /mealstogo-b3cc7/us-central1/geocode?city=Toronto --> us-central1-geocode
+[debug] [2022-04-27T15:39:51.733Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2022-04-27T15:39:51.739Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-04-27T15:39:51.739Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-04-27T15:39:51.739Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-04-27T15:39:51.739Z] [worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: Assigning socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\4948 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\4948"}}
+[debug] [2022-04-27T15:39:51.739Z] [worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: BUSY"}}
+[debug] [2022-04-27T15:39:53.403Z] [runtime-status] [4948] Functions runtime initialized. {"cwd":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2022-04-27T15:39:53.405Z] [runtime-status] [4948] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Disabled runtime features: undefined"}}
+[debug] [2022-04-27T15:39:53.409Z] [runtime-status] [4948] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:39:53.412Z] [runtime-status] [4948] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:39:53.412Z] [runtime-status] [4948] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-04-27T15:39:53.413Z] [runtime-status] [4948] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:39:53.532Z] [runtime-status] [4948] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-04-27T15:39:53.532Z] [runtime-status] [4948] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-27T15:39:53.533Z] [runtime-status] [4948] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:39:53.535Z] [runtime-status] [4948] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:39:53.536Z] [runtime-status] [4948] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:39:53.536Z] [runtime-status] [4948] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-27T15:39:53.541Z] [runtime-status] [4948] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-04-27T15:39:53.542Z] [runtime-status] [4948] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Running geocode in signature http"}}
+[debug] [2022-04-27T15:39:53.548Z] [runtime-status] [4948] Attempting to listen to socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\4948 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\4948"}}
+[debug] [2022-04-27T15:39:53.552Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-27T15:39:53.552Z] [functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Toronto, mapping to path=/?city=Toronto {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Toronto, mapping to path=/?city=Toronto"}}
+[debug] [2022-04-27T15:39:53.581Z] [runtime-status] [4948] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Ephemeral server handling GET request"}}
+[debug] [2022-04-27T15:39:53.584Z] [runtime-status] [4948] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-04-27T15:39:53.639Z] [worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: IDLE"}}
+[debug] [2022-04-27T15:39:53.639Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-27T15:40:18.551Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-27T15:40:18.551Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-27T15:40:18.551Z] Accepted request GET /mealstogo-b3cc7/us-central1/geocode?city=San%20Francisco --> us-central1-geocode
+[debug] [2022-04-27T15:40:18.551Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-04-27T15:40:18.551Z] [worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: Assigning socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\4948 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\4948"}}
+[debug] [2022-04-27T15:40:18.551Z] [worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: BUSY"}}
+[debug] [2022-04-27T15:40:18.552Z] [runtime-status] [4948] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-04-27T15:40:18.553Z] [runtime-status] [4948] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Running geocode in signature http"}}
+[debug] [2022-04-27T15:40:18.554Z] [runtime-status] [4948] Attempting to listen to socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\4948 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\4948"}}
+[debug] [2022-04-27T15:40:18.555Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-27T15:40:18.555Z] [functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=San%20Francisco, mapping to path=/?city=San%20Francisco {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=San%20Francisco, mapping to path=/?city=San%20Francisco"}}
+[debug] [2022-04-27T15:40:18.557Z] [runtime-status] [4948] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Ephemeral server handling GET request"}}
+[debug] [2022-04-27T15:40:18.558Z] [runtime-status] [4948] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-04-27T15:40:18.560Z] [worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: IDLE"}}
+[debug] [2022-04-27T15:40:18.560Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-27T15:40:31.099Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-27T15:40:31.099Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-27T15:40:31.099Z] Accepted request GET /mealstogo-b3cc7/us-central1/geocode?city=Antwerp --> us-central1-geocode
+[debug] [2022-04-27T15:40:31.099Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-04-27T15:40:31.099Z] [worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: Assigning socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\4948 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\4948"}}
+[debug] [2022-04-27T15:40:31.099Z] [worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: BUSY"}}
+[debug] [2022-04-27T15:40:31.100Z] [runtime-status] [4948] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-04-27T15:40:31.101Z] [runtime-status] [4948] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Running geocode in signature http"}}
+[debug] [2022-04-27T15:40:31.101Z] [runtime-status] [4948] Attempting to listen to socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\4948 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\4948"}}
+[debug] [2022-04-27T15:40:31.103Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-27T15:40:31.103Z] [functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Antwerp, mapping to path=/?city=Antwerp {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Antwerp, mapping to path=/?city=Antwerp"}}
+[debug] [2022-04-27T15:40:31.105Z] [runtime-status] [4948] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Ephemeral server handling GET request"}}
+[debug] [2022-04-27T15:40:31.106Z] [runtime-status] [4948] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [4948] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-04-27T15:40:31.107Z] [worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: IDLE"}}
+[debug] [2022-04-27T15:40:31.107Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-27T15:40:46.115Z] File C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\index.js changed, reloading triggers"}}
+[debug] [2022-04-27T15:40:47.130Z] [worker-pool] Shutting down IDLE worker (us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-geocode)"}}
+[debug] [2022-04-27T15:40:47.130Z] [worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: FINISHING"}}
+[debug] [2022-04-27T15:40:47.132Z] Validating nodejs source
+[debug] [2022-04-27T15:40:50.787Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-27T15:40:50.787Z] Building nodejs source
+[debug] [2022-04-27T15:40:50.787Z] Analyzing nodejs backend spec
+[debug] [2022-04-27T15:40:50.791Z] [worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: exited"}}
+[debug] [2022-04-27T15:40:50.791Z] [worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-bba21e17-604b-4c17-bf7d-2e9f1ef57f99]: FINISHED"}}
+[debug] [2022-04-27T15:40:50.794Z] File C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\index.js changed, reloading triggers"}}
+[debug] [2022-04-27T15:40:51.797Z] Validating nodejs source
+[debug] [2022-04-27T15:40:55.347Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-27T15:40:55.347Z] Building nodejs source
+[debug] [2022-04-27T15:40:55.348Z] Analyzing nodejs backend spec
+[debug] [2022-04-27T15:40:56.005Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-27T15:40:56.005Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-27T15:40:56.005Z] Accepted request GET /mealstogo-b3cc7/us-central1/geocode?city=Antwerp --> us-central1-geocode
+[debug] [2022-04-27T15:40:56.005Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2022-04-27T15:40:56.010Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-04-27T15:40:56.010Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-04-27T15:40:56.010Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-04-27T15:40:56.010Z] [worker-us-central1-geocode-a35f0d8d-5c21-4500-b8e3-bf502552b6c2]: Assigning socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\10952 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-a35f0d8d-5c21-4500-b8e3-bf502552b6c2]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\10952"}}
+[debug] [2022-04-27T15:40:56.010Z] [worker-us-central1-geocode-a35f0d8d-5c21-4500-b8e3-bf502552b6c2]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-a35f0d8d-5c21-4500-b8e3-bf502552b6c2]: BUSY"}}
+[debug] [2022-04-27T15:40:57.756Z] [runtime-status] [10952] Functions runtime initialized. {"cwd":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10952] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2022-04-27T15:40:57.758Z] [runtime-status] [10952] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10952] Disabled runtime features: undefined"}}
+[debug] [2022-04-27T15:40:57.762Z] [runtime-status] [10952] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10952] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:40:57.765Z] [runtime-status] [10952] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10952] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:40:57.766Z] [runtime-status] [10952] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10952] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-04-27T15:40:57.767Z] [runtime-status] [10952] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10952] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:40:57.878Z] [runtime-status] [10952] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10952] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-04-27T15:40:57.878Z] [runtime-status] [10952] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10952] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-27T15:40:57.879Z] [runtime-status] [10952] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10952] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:40:57.881Z] [runtime-status] [10952] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10952] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:40:57.882Z] [runtime-status] [10952] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10952] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:40:57.882Z] [runtime-status] [10952] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10952] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-27T15:40:57.886Z] [runtime-status] [10952] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10952] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-04-27T15:40:57.887Z] [runtime-status] [10952] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10952] Running geocode in signature http"}}
+[debug] [2022-04-27T15:40:57.890Z] [runtime-status] [10952] Attempting to listen to socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\10952 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10952] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\10952"}}
+[debug] [2022-04-27T15:40:57.893Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-27T15:40:57.894Z] [functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Antwerp, mapping to path=/?city=Antwerp {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Antwerp, mapping to path=/?city=Antwerp"}}
+[debug] [2022-04-27T15:40:57.917Z] [runtime-status] [10952] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10952] Ephemeral server handling GET request"}}
+[debug] [2022-04-27T15:40:57.931Z] [runtime-status] [10952] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10952] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-04-27T15:40:57.942Z] [worker-us-central1-geocode-a35f0d8d-5c21-4500-b8e3-bf502552b6c2]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-a35f0d8d-5c21-4500-b8e3-bf502552b6c2]: IDLE"}}
+[debug] [2022-04-27T15:40:57.942Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-27T15:41:12.206Z] File C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\index.js changed, reloading triggers"}}
+[debug] [2022-04-27T15:41:13.215Z] [worker-pool] Shutting down IDLE worker (us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-geocode)"}}
+[debug] [2022-04-27T15:41:13.215Z] [worker-us-central1-geocode-a35f0d8d-5c21-4500-b8e3-bf502552b6c2]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-a35f0d8d-5c21-4500-b8e3-bf502552b6c2]: FINISHING"}}
+[debug] [2022-04-27T15:41:13.217Z] Validating nodejs source
+[debug] [2022-04-27T15:41:17.185Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-27T15:41:17.185Z] Building nodejs source
+[debug] [2022-04-27T15:41:17.185Z] Analyzing nodejs backend spec
+[debug] [2022-04-27T15:41:17.189Z] [worker-us-central1-geocode-a35f0d8d-5c21-4500-b8e3-bf502552b6c2]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-a35f0d8d-5c21-4500-b8e3-bf502552b6c2]: exited"}}
+[debug] [2022-04-27T15:41:17.189Z] [worker-us-central1-geocode-a35f0d8d-5c21-4500-b8e3-bf502552b6c2]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-a35f0d8d-5c21-4500-b8e3-bf502552b6c2]: FINISHED"}}
+[debug] [2022-04-27T15:41:17.190Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-27T15:41:17.190Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-27T15:41:17.190Z] Accepted request GET /mealstogo-b3cc7/us-central1/geocode?city=Antwerp --> us-central1-geocode
+[debug] [2022-04-27T15:41:17.190Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2022-04-27T15:41:17.196Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-04-27T15:41:17.196Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-04-27T15:41:17.196Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-04-27T15:41:17.196Z] [worker-us-central1-geocode-f6e78158-4036-48e5-a082-cc740738f9b1]: Assigning socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\19560 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-f6e78158-4036-48e5-a082-cc740738f9b1]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\19560"}}
+[debug] [2022-04-27T15:41:17.196Z] [worker-us-central1-geocode-f6e78158-4036-48e5-a082-cc740738f9b1]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-f6e78158-4036-48e5-a082-cc740738f9b1]: BUSY"}}
+[debug] [2022-04-27T15:41:17.197Z] File C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\index.js changed, reloading triggers"}}
+[debug] [2022-04-27T15:41:18.210Z] [worker-pool] Marking BUSY worker to finish (us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Marking BUSY worker to finish (us-central1-geocode)"}}
+[debug] [2022-04-27T15:41:18.210Z] [worker-us-central1-geocode-f6e78158-4036-48e5-a082-cc740738f9b1]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-f6e78158-4036-48e5-a082-cc740738f9b1]: FINISHING"}}
+[debug] [2022-04-27T15:41:18.211Z] Validating nodejs source
+[debug] [2022-04-27T15:41:21.512Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-27T15:41:21.512Z] Building nodejs source
+[debug] [2022-04-27T15:41:21.512Z] Analyzing nodejs backend spec
+[debug] [2022-04-27T15:41:21.516Z] [runtime-status] [19560] Functions runtime initialized. {"cwd":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [19560] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2022-04-27T15:41:21.516Z] [runtime-status] [19560] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [19560] Disabled runtime features: undefined"}}
+[debug] [2022-04-27T15:41:21.516Z] [runtime-status] [19560] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [19560] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:41:21.516Z] [runtime-status] [19560] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [19560] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:41:21.516Z] [runtime-status] [19560] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [19560] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-04-27T15:41:21.517Z] [runtime-status] [19560] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [19560] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:41:21.517Z] [runtime-status] [19560] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [19560] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-04-27T15:41:21.517Z] [runtime-status] [19560] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [19560] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-27T15:41:21.517Z] [runtime-status] [19560] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [19560] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:41:21.517Z] [runtime-status] [19560] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [19560] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:41:21.517Z] [runtime-status] [19560] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.1","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [19560] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.1\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-27T15:41:21.517Z] [runtime-status] [19560] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.1.0","resolution":"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [19560] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.1.0\",\"resolution\":\"C:\\\\Users\\\\Marios\\\\Documents\\\\ReactNativeProjects\\\\RNMealsToGo\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-27T15:41:21.517Z] [runtime-status] [19560] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [19560] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-04-27T15:41:21.520Z] [runtime-status] [19560] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [19560] Running geocode in signature http"}}
+[debug] [2022-04-27T15:41:21.520Z] [runtime-status] [19560] Attempting to listen to socketPath: \\?\pipe\C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\19560 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [19560] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\19560"}}
+[debug] [2022-04-27T15:41:21.521Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-27T15:41:21.521Z] [functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Antwerp, mapping to path=/?city=Antwerp {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-b3cc7/us-central1/geocode?city=Antwerp, mapping to path=/?city=Antwerp"}}
+[debug] [2022-04-27T15:41:21.527Z] [runtime-status] [19560] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [19560] Ephemeral server handling GET request"}}
+[debug] [2022-04-27T15:41:21.533Z] [runtime-status] [19560] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [19560] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~2s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~2s"}}
+[debug] [2022-04-27T15:41:21.538Z] [worker-us-central1-geocode-f6e78158-4036-48e5-a082-cc740738f9b1]: IDLE --> FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-f6e78158-4036-48e5-a082-cc740738f9b1]: IDLE --> FINISHING"}}
+[debug] [2022-04-27T15:41:21.627Z] [worker-us-central1-geocode-f6e78158-4036-48e5-a082-cc740738f9b1]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-f6e78158-4036-48e5-a082-cc740738f9b1]: exited"}}
+[debug] [2022-04-27T15:41:21.628Z] [worker-us-central1-geocode-f6e78158-4036-48e5-a082-cc740738f9b1]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-f6e78158-4036-48e5-a082-cc740738f9b1]: FINISHED"}}
+[debug] [2022-04-27T15:41:21.628Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-27T15:51:23.827Z] File C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions\geocode\geocode.mock.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\\geocode\\geocode.mock.js changed, reloading triggers"}}
+[debug] [2022-04-27T15:51:24.838Z] Validating nodejs source
+[debug] [2022-04-27T15:51:29.564Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-27T15:51:29.564Z] Building nodejs source
+[debug] [2022-04-27T15:51:29.564Z] Analyzing nodejs backend spec
+[debug] [2022-04-27T15:51:29.984Z] Received signal SIGHUP 1
