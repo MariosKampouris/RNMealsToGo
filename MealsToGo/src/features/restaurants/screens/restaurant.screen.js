@@ -9,6 +9,7 @@ import {
     TouchableOpacity
   } from "react-native";
 
+import { LocationContext } from "../../../services/location/location.context";
 import { RestaurantsContext } from "../../../services/restaurants/restaurants.context";
 import { FavouritesContext } from "../../../services/favourites/favourites.context";
 
@@ -19,10 +20,13 @@ import { FadeInView } from "../../../components/animations/fade.animation";
 
 export const RestaurantScreen = ({navigation}) => {
 
-  const {isLoading, error, restaurants} = useContext(RestaurantsContext);
+  const {isLoading, restaurants, error} = useContext(RestaurantsContext);
+  const { error: locationError } = useContext(LocationContext);
   const {favourites} = useContext(FavouritesContext);
   const [isToggled, setIsToggled] = useState(false);
 
+  const hasError = !!error || !!locationError;
+  
   return(
   <SafeAreaView style={styles.container}>
     {isLoading && (
@@ -32,7 +36,12 @@ export const RestaurantScreen = ({navigation}) => {
     )}
     <Search isFavouritesToggled={isToggled} onFavouritesToggle={() => setIsToggled(!isToggled)}/>
     {isToggled && <FavouritesBar favourites={favourites} onNavigate={navigation.navigate}/>}
-    
+
+    {hasError && (
+          <Text style={styles.errortext} variant="error">Something went wrong retrieving the data</Text>
+      )}
+
+    {!hasError &&(
     <FlatList 
       data={restaurants}
       renderItem={({item}) =>{
@@ -45,7 +54,7 @@ export const RestaurantScreen = ({navigation}) => {
        )}}
       keyExtractor={(item) => item.name}
       contentContainerStyle={{padding: 16}}
-    />
+    />)}
   
   </SafeAreaView>
   )
@@ -64,5 +73,8 @@ const styles = StyleSheet.create({
       position: 'absolute',
       top: '50%',
       left: '50%'
+    },
+    errortext: {
+      padding : 16
     }
   });

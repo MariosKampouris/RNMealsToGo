@@ -125,3 +125,82 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 }
 [debug] [2022-05-16T00:24:23.286Z] Building nodejs source
 [debug] [2022-05-16T00:24:23.286Z] Analyzing nodejs backend spec
+[debug] [2022-05-24T20:12:23.332Z] ----------------------------------------------------------------------
+[debug] [2022-05-24T20:12:23.335Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Marios\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2022-05-24T20:12:23.335Z] CLI Version:   10.8.0
+[debug] [2022-05-24T20:12:23.336Z] Platform:      win32
+[debug] [2022-05-24T20:12:23.336Z] Node Version:  v16.14.0
+[debug] [2022-05-24T20:12:23.344Z] Time:          Tue May 24 2022 16:12:23 GMT-0400 (Eastern Daylight Time)
+[debug] [2022-05-24T20:12:23.344Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-24T20:12:23.348Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-05-24T20:12:23.445Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-24T20:12:23.445Z] > authorizing via signed-in user (marioswow20@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-05-24T20:12:23.465Z] [hub] writing locator at C:\Users\Marios\AppData\Local\Temp\hub-mealstogo-b3cc7.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-05-24T20:12:23.782Z] defaultcredentials: writing to file C:\Users\Marios\AppData\Roaming\firebase\marioswow20_gmail_com_application_default_credentials.json
+[debug] [2022-05-24T20:12:23.783Z] Setting GAC to C:\Users\Marios\AppData\Roaming\firebase\marioswow20_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Marios\\AppData\\Roaming\\firebase\\marioswow20_gmail_com_application_default_credentials.json"}}
+[debug] [2022-05-24T20:12:23.784Z] > refreshing access token with scopes: []
+[debug] [2022-05-24T20:12:23.785Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-24T20:12:24.046Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-05-24T20:12:24.046Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-05-24T20:12:24.081Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 24 May 2022 20:12:25 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-24T20:12:24.090Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-b3cc7/adminSdkConfig [none]
+[debug] [2022-05-24T20:12:24.559Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-b3cc7/adminSdkConfig 200
+[debug] [2022-05-24T20:12:24.559Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-b3cc7/adminSdkConfig {"projectId":"mealstogo-b3cc7","storageBucket":"mealstogo-b3cc7.appspot.com"}
+[debug] [2022-05-24T20:12:24.576Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-05-24T20:12:24.577Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-05-24T20:12:24.577Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Marios\\.cache\\firebase\\emulators\\ui-v1.6.6\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Marios\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.6.6\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-05-24T20:12:24.718Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "C:\Users\Marios\Documents\ReactNativeProjects\RNMealsToGo\MealsToGo\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Marios\\Documents\\ReactNativeProjects\\RNMealsToGo\\MealsToGo\\functions\" for Cloud Functions..."}}
+[debug] [2022-05-24T20:12:24.850Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2022-05-24T20:12:28.625Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.3.13",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.21.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-05-24T20:12:28.625Z] Building nodejs source
+[debug] [2022-05-24T20:12:28.625Z] Analyzing nodejs backend spec
+[info] +  functions[us-central1-geocode]: http function initialized (http://localhost:5001/mealstogo-b3cc7/us-central1/geocode). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/mealstogo-b3cc7/us-central1/geocode)."}}
+[info] +  functions[us-central1-placesNearby]: http function initialized (http://localhost:5001/mealstogo-b3cc7/us-central1/placesNearby). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/mealstogo-b3cc7/us-central1/placesNearby)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
